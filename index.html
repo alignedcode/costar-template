@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://is5-ssl.mzstatic.com" crossorigin>
   <link rel="preconnect" href="https://xp.apple.com" crossorigin>
   <link rel="preconnect" href="https://js-cdn.music.apple.com" crossorigin>
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="preconnect" href="https://www.apple.com" crossorigin>
 
   <meta name="web-experience-app/config/environment"
@@ -98,24 +99,53 @@ What kind of person are you and your lover? Every human has unique characteristi
   <main class="selfclear is-apps-theme">
     <!---->
 
+
+    <div class="toolbar">
+      <a href="#" class="toolbar-nav">
+        <img src="images/icon-today.svg" alt="">
+        <span class="caption-1 color-gray">Today</span>
+      </a>
+      <a href="#" class="toolbar-nav">
+        <img src="images/icon-game.svg">
+        <span class="caption-1 color-gray">Today</span>
+      </a>
+      <a href="#" class="toolbar-nav">
+        <img src="images/icon-app.svg">
+        <span class="caption-1 color-gray">Today</span>
+      </a>
+      <a href="#" class="toolbar-nav">
+        <img src="images/icon-arcade.svg">
+        <span class="caption-1 color-gray">Today</span>
+      </a>
+      <a href="#" class="toolbar-nav">
+        <img src="images/icon-search.svg">
+        <span class="caption-1 color-gray">Today</span>
+      </a>
+
+
+
+
+
+    </div>
+
     <input id="localnav-menustate" class="localnav-menustate" type="checkbox">
 
     <nav id="localnav" class="css-sticky we-localnav localnav   we-localnav--app-store" data-sticky>
       <div class="localnav-wrapper">
-        <div class="localnav-background we-localnav__background"></div>
-        <div class="localnav-content we-localnav__content">
-          <div class="localnav-title we-localnav__title">
-            <a href="https://www.apple.com/ios/app-store/" data-we-link-to-exclude><span
-                class="we-localnav__title__product" data-test-we-localnav-store-title>App Store</span></a> <span
-              class="we-localnav__title__qualifier" data-test-we-localnav-preview-title>Preview</span>
-          </div>
-          <div class="localnav-menu we-localnav__menu we-localnav__menu--apps">
-            <!---->
-            <div class="localnav-actions we-localnav__actions">
-              <!---->
-              <!---->
+        <div class="localnav-background header-background flex">
+          <a href="#"> Search </a>
+          <img src="images/Yl70wIH7E7WX.png" class="localnav__logo" style="height:32px;opacity: 0;" alt="">
+
+          <div class="flex" style="align-items: center">
+            <span id="in-app" class="caption-2 color-gray" style="opacity: 0">In-App <br>Purchases</span>
+            <div id="get-button" class="localnav-menu we-localnav__menu we-localnav__menu--apps" style="opacity: 0">
+
+              <div class="product-header__install title-3" style="width:fit-content"><span
+                  style="vertical-align:text-top"> GET</span></div>
             </div>
           </div>
+
+
         </div>
       </div>
     </nav>
@@ -130,7 +160,7 @@ What kind of person are you and your lover? Every human has unique characteristi
       <!---->
       <!---->
       <section class="l-content-width section section--hero product-hero">
-        <div class="l-row">
+        <div class="l-row flex" id="logo">
           <div class="product-hero__media l-column small-5 medium-4 large-3 small-valign-top">
             <picture
               class="we-artwork we-artwork--downloaded product-hero__artwork we-artwork--fullwidth we-artwork--ios-app-icon"
@@ -191,32 +221,39 @@ What kind of person are you and your lover? Every human has unique characteristi
 
           </div>
 
-          <div class="l-column small-7 medium-8 large-9 small-valign-top">
-            <header class="product-header app-header product-header--padded-start">
-              <!---->
-              <h1 class="product-header__title app-header__title">
-                Costar. Birth Chart Numerology
-                <span class="badge badge--product-title">9+</span>
-              </h1>
+          <div class="l-column product-header  app-header product-header--padded-start">
 
-              <h2 class="product-header__subtitle app-header__subtitle">
-                Personality & Compatibility
-              </h2>
+            <h1 class="product-header__title app-header__title title-1">
+              Costar. Birth Chart Numerology
+              <span class="badge badge--product-title">9+</span>
+            </h1>
 
+            <h2 class="product-header__subtitle app-header__subtitle">
+              Personality & Compatibility
+            </h2>
+
+            <div class="product-header__buttons">
+              <div class="product-header__install title-3"><span style="vertical-align:text-top"> GET</span></div>
+              <span class="caption-2 color-gray">In-App <br>Purchases</span>
+              <a href="#" class="product-header__share">
+                <img src="images/icon-share.svg" alt="">
+              </a>
+            </div>
+            <!-- 
               <h2 class="product-header__identity app-header__identity">
                 <a href="https://apps.apple.com/us/developer/sayhi-inc/id1464015993" class="link" data-metrics-click="{"
                   actionDetails":{"type":"developer"},"actionType":"navigate","actionUrl":"https: apps.apple.com us
                   developer sayhi-inc id1464015993","targetType":"link","targetId":"1464015993"}" dir="auto">
                   SAYHI INC.
                 </a>
-              </h2>
+              </h2> -->
 
-              <h3 class="app-header__designed-for">
+            <!-- <h3 class="app-header__designed-for">
                 Designed for iPhone
-              </h3>
+              </h3> -->
 
-              <ul class="product-header__list app-header__list">
-                <!---->
+            <!-- <ul class="product-header__list app-header__list">
+
                 <li class="product-header__list__item app-header__list__item--user-rating">
                   <ul class="inline-list inline-list--mobile-compact">
                     <li class="inline-list__item">
@@ -233,7 +270,7 @@ What kind of person are you and your lover? Every human has unique characteristi
               </ul>
 
               <ul class="product-header__list app-header__list">
-                <!---->
+      
                 <li class="product-header__list__item">
                   <ul class="inline-list inline-list--mobile-compact">
                     <li class="inline-list__item inline-list__item--bulleted app-header__list__item--price">Free</li>
@@ -243,23 +280,65 @@ What kind of person are you and your lover? Every human has unique characteristi
                   </ul>
                 </li>
 
-                <!---->
-                <!---->
-              </ul>
+   
+              </ul> -->
+          </div>
+        </div>
+      </section>
 
-              <!---->
-              <!---->
-              <!---->
-              <!---->
-            </header>
+      <section class="section--bordered">
+        <div class="PreLand5_store_info__uyKKy">
+          <div class="PreLand5_store_info_item__k-WkQ">
+            <div class="font-11">517 RATINGS</div><b class="font-19 app-info-icon">4.7</b>
+            <div class="PreLand5_stars__9LE82"><svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.85039 4.69534L6.73104 1.03835C6.51022 0.320551 5.48986 0.320551 5.27665 1.03835L4.14969 4.69534H0.761192C0.0225753 4.69534 -0.282009 5.63981 0.319545 6.06293L3.09126 8.02743L2.00237 11.5106C1.78155 12.2133 2.60393 12.78 3.19025 12.3342L6.00004 10.2186L8.80983 12.3418C9.39615 12.7876 10.2185 12.2209 9.9977 11.5182L8.90882 8.03498L11.6805 6.07049C12.2821 5.63981 11.9775 4.70289 11.2389 4.70289H7.85039V4.69534Z"
+                  fill="currentColor"></path>
+              </svg><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.85039 4.69534L6.73104 1.03835C6.51022 0.320551 5.48986 0.320551 5.27665 1.03835L4.14969 4.69534H0.761192C0.0225753 4.69534 -0.282009 5.63981 0.319545 6.06293L3.09126 8.02743L2.00237 11.5106C1.78155 12.2133 2.60393 12.78 3.19025 12.3342L6.00004 10.2186L8.80983 12.3418C9.39615 12.7876 10.2185 12.2209 9.9977 11.5182L8.90882 8.03498L11.6805 6.07049C12.2821 5.63981 11.9775 4.70289 11.2389 4.70289H7.85039V4.69534Z"
+                  fill="currentColor"></path>
+              </svg><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.85039 4.69534L6.73104 1.03835C6.51022 0.320551 5.48986 0.320551 5.27665 1.03835L4.14969 4.69534H0.761192C0.0225753 4.69534 -0.282009 5.63981 0.319545 6.06293L3.09126 8.02743L2.00237 11.5106C1.78155 12.2133 2.60393 12.78 3.19025 12.3342L6.00004 10.2186L8.80983 12.3418C9.39615 12.7876 10.2185 12.2209 9.9977 11.5182L8.90882 8.03498L11.6805 6.07049C12.2821 5.63981 11.9775 4.70289 11.2389 4.70289H7.85039V4.69534Z"
+                  fill="currentColor"></path>
+              </svg><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.85039 4.69534L6.73104 1.03835C6.51022 0.320551 5.48986 0.320551 5.27665 1.03835L4.14969 4.69534H0.761192C0.0225753 4.69534 -0.282009 5.63981 0.319545 6.06293L3.09126 8.02743L2.00237 11.5106C1.78155 12.2133 2.60393 12.78 3.19025 12.3342L6.00004 10.2186L8.80983 12.3418C9.39615 12.7876 10.2185 12.2209 9.9977 11.5182L8.90882 8.03498L11.6805 6.07049C12.2821 5.63981 11.9775 4.70289 11.2389 4.70289H7.85039V4.69534Z"
+                  fill="currentColor"></path>
+              </svg><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.85039 4.69534L6.73104 1.03835C6.51022 0.320551 5.48986 0.320551 5.27665 1.03835L4.14969 4.69534H0.761192C0.0225753 4.69534 -0.282009 5.63981 0.319545 6.06293L3.09126 8.02743L2.00237 11.5106C1.78155 12.2133 2.60393 12.78 3.19025 12.3342L6.00004 10.2186L8.80983 12.3418C9.39615 12.7876 10.2185 12.2209 9.9977 11.5182L8.90882 8.03498L11.6805 6.07049C12.2821 5.63981 11.9775 4.70289 11.2389 4.70289H7.85039V4.69534Z"
+                  fill="currentColor"></path>
+              </svg></div>
+          </div>
+          <div class="PreLand5_store_info_item__k-WkQ">
+            <div class="font-11">AGE</div><b class="font-19 app-info-icon">9 +</b><span class="font-11">Years Old</span>
+          </div>
+          <div class="PreLand5_store_info_item__k-WkQ">
+            <div class="font-11">CATEGORY</div><b class="font-19 app-info-icon"><img src="images/category.svg"
+                alt=""></b><span class="font-11">Lifestyle</span>
+          </div>
+          <div class="PreLand5_store_info_item__k-WkQ">
+            <div class="font-11">DEVELOPER</div><b class="font-19 app-info-icon"><img src="images/develope.svg"
+                alt=""></b><span class="font-11">SAYHI INC.</span>
+          </div>
+
+          <div class="PreLand5_store_info_item__k-WkQ">
+            <div class="font-11">LANGUAGE</div><b class="font-19 app-info-icon">EN</b><span
+              class="font-11">English</span>
+          </div>
+          <div class="PreLand5_store_info_item__k-WkQ">
+            <div class="font-11">SIZE</div><b class="font-19 app-info-icon">24.4</b><span class="font-11">MB</span>
           </div>
         </div>
       </section>
 
 
       <!---->
-      <section class="l-content-width section section--bordered">
-        <h2 class="section__headline">iPhone Screenshots</h2>
+      <section class="l-content-width section">
+        <!-- <h2 class="section__headline">iPhone Screenshots</h2> -->
         <div class="we-screenshot-viewer">
           <div class="we-screenshot-viewer__screenshots">
             <ul class="l-row l-row--peek we-screenshot-viewer__screenshots-list">
@@ -628,6 +707,10 @@ What kind of person are you and your lover? Every human has unique characteristi
           </div>
         </div>
 
+        <div class="device-info">
+          <img src="images/device-iphone.svg" alt="">
+        </div>
+
       </section>
 
 
@@ -657,11 +740,22 @@ What kind of person are you and your lover? Every human has unique characteristi
                 are compatible with each other makes it difficult to develop a long-lasting relationship. Our numerology
                 compatibility will reveal all the secrets. We have developed our own compatibility algorithm, which will
                 show the result with 100% accuracy!<br><br>Discover your life with this app, you will never have to
-                regret!<br><br>Privacy Policy: https://match-up.me/Home/Privacy<br>Terms of service:
-                https://match-up.me/Home/TermsOfService</p>
+                regret!<br><br>Privacy Policy: <a href="#">https://match-up.me/Home/Privacy</a><br>Terms of service:
+                <a href="#">https://match-up.me/Home/TermsOfService</a>
+              </p>
 
 
+              <div class="description__developer">
+                <p class="description__developer-info">
+                  <a class="body-1" href="#">SAYHI INC.</a>
+                  <span class="body-1 color-gray">Developer</span>
+                </p>
 
+                <a href="#" class="description__developer-link">
+                  <img src="images/arrow-right-gray.svg" alt="">
+                </a>
+
+              </div>
               <!---->
             </div>
 
@@ -675,8 +769,7 @@ What kind of person are you and your lover? Every human has unique characteristi
         <div class="section__nav section__nav--small">
           <h2 class="whats-new__headline">What’s New</h2>
           <div class="version-history">
-            <!---->
-            <!---->
+            <a href="#" class="subtitle-1">Version History</a>
           </div>
 
         </div>
@@ -685,7 +778,12 @@ What kind of person are you and your lover? Every human has unique characteristi
             <div class="l-row">
               <time data-test-we-datetime datetime="2022-10-03T00:00:00.000Z" aria-label="October 3, 2022" class>Oct 3,
                 2022</time>
-              <p class="l-column small-6 medium-12 whats-new__latest__version">Version 1.38.0</p>
+
+              <div>
+                <p class="l-column small-6 medium-12 whats-new__latest__version">Version 1.38.0</p>
+                <p style="text-align: right;" class="l-column small-6 medium-12 whats-new__latest__version">2d ago</p>
+              </div>
+
             </div>
           </div>
           <div class="l-column small-12 medium-9 large-8 small-valign-top">
@@ -708,10 +806,11 @@ What kind of person are you and your lover? Every human has unique characteristi
       </section>
 
       <section class="l-content-width section section--bordered">
-        <div class="section__nav">
+        <div class="section__nav" style="align-items: baseline;">
           <h2 class="section__headline">
             Ratings and Reviews
           </h2>
+          <a href="#" class="subtitle-1">See All</a>
 
           <!---->
         </div>
@@ -868,7 +967,7 @@ What kind of person are you and your lover? Every human has unique characteristi
           <h2 class="section__headline">Subscriptions</h2>
           <!---->
         </div>
-        <div class="l-row l-row--peek">
+        <div class="l-row l-row--peek" style="align-items: start;">
 
           <div class="we-lockup l-column small-2 medium-3 large-2"
             aria-label="Numerology, Horoscopes & more. Check your personality by date of birth!." data-metrics-click="{"
@@ -941,9 +1040,7 @@ What kind of person are you and your lover? Every human has unique characteristi
 
             <div class="we-lockup__copy">
               <!---->
-              <div class="we-lockup__text">
-                <!---->
-                <!---->
+              <!-- <div class="we-lockup__text">
                 <div class="we-lockup__title ">
                   <div class="we-truncate we-truncate--single-line " dir="ltr">
                     Numerology, Horoscopes & more
@@ -958,255 +1055,239 @@ What kind of person are you and your lover? Every human has unique characteristi
 
 
                 <div class="truncate-single-line we-lockup__details">Free Trial</div>
-              </div>
+              </div> -->
             </div>
           </div>
 
-
-
-
-
-        </div>
-      </section>
-
-      <!---->
-      <section class="l-content-width section section--bordered app-privacy">
-        <div class="section__nav">
-          <h2 class="section__headline section__headline--app-privacy">
-            App Privacy
-          </h2>
-
-          <div class="app-privacy--modal privacy-type--modal">
-            <!---->
-            <!---->
-          </div>
-
-
-        </div>
-
-        <p>
-          The developer, <span class="app-privacy__developer-name">SAYHI INC.</span>, indicated that the app’s privacy
-          practices may include handling of data as described below. For more information, see the <a
-            href="https://match-up.me/Home/Privacy">developer’s privacy policy</a>.
-        </p>
-
-        <div class="app-privacy__cards">
-          <div class="app-privacy__card">
-            <div class="privacy-type__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
-                <path
-                  d="M32.09 61.568c16.185 0 29.586-13.43 29.586-29.587 0-16.186-13.43-29.587-29.616-29.587-16.157 0-29.558 13.4-29.558 29.587 0 16.156 13.43 29.587 29.587 29.587zm0-4.932c-13.692 0-24.628-10.964-24.628-24.655 0-13.692 10.907-24.656 24.598-24.656 13.691 0 24.656 10.964 24.685 24.656.03 13.69-10.965 24.655-24.656 24.655zM28.897 45.76c.958 0 1.77-.464 2.35-1.363L44.504 23.54c.32-.551.696-1.219.696-1.857 0-1.276-1.16-2.117-2.378-2.117-.725 0-1.45.435-2.002 1.305l-12.038 19.29-5.714-7.368c-.696-.928-1.334-1.19-2.146-1.19-1.248 0-2.234 1.016-2.234 2.321 0 .61.261 1.247.667 1.799l7.078 8.673c.725.957 1.508 1.363 2.465 1.363z" />
-              </svg>
+          <div class="subscription-info  l-column">
+            <p class="subtitle-1 color-black">
+              Numerology, Horoscopes & more
+            </p>
+            <p class="body-2 color-gray"> Check your personality by date of birth!</p>
+            <div class="subscription-info__trial">
+              <p class="title-3  subscription-info__trial-button">FREE TRIAL</p>
+              <span style="font-size: 8px">See Details</span>
             </div>
-            <h3 class="privacy-type__heading">Data Not Collected</h3>
-            <p class="privacy-type__description">The developer does not collect any data from this app.</p>
-            <!---->
+
           </div>
         </div>
 
-        <p class="app-privacy__learn-more">Privacy practices may vary, for example, based on the features you use or
-          your age. <a href="https://apps.apple.com/story/id1538632801">Learn More</a></p>
-      </section>
 
 
-      <section class="l-content-width section section--bordered section--information">
-        <div>
-          <h2 class="section__headline">Information</h2>
-          <dl class="information-list information-list--app medium-columns l-row">
-            <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
-              <dt class="information-list__item__term medium-valign-top">Seller</dt>
-              <dd class="information-list__item__definition">
-                SAYHI INC.
-              </dd>
-            </div>
-            <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
-              <dt class="information-list__item__term medium-valign-top">Size</dt>
-              <dd class="information-list__item__definition" aria-label="24.4 megabytes">24.4 MB</dd>
-            </div>
-            <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
-              <dt class="information-list__item__term medium-valign-top">Category</dt>
-              <dd class="information-list__item__definition">
-                <a href="https://itunes.apple.com/us/genre/id6012" class="link" data-metrics-click="{"
-                  actionType":"navigate","actionUrl":"https: itunes.apple.com us genre
-                  id6012","targetType":"link","targetId":"GenrePage"}">
-                  Lifestyle
-                </a>
-              </dd>
-            </div>
-            <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
-              <dt class="information-list__item__term medium-valign-top">Compatibility</dt>
-              <dd class="information-list__item__definition">
-                <dl class="information-list__item__definition__item">
-                  <dt class="information-list__item__definition__item__term">
-                    iPhone
-                  </dt>
-                  <dd class="information-list__item__definition__item__definition">Requires iOS 12.4 or later.
-                  </dd>
-                </dl>
-                <dl class="information-list__item__definition__item">
-                  <dt class="information-list__item__definition__item__term">
-                    iPod touch
-                  </dt>
-                  <dd class="information-list__item__definition__item__definition">Requires iOS 12.4 or later.
-                  </dd>
-                </dl>
-                <dl class="information-list__item__definition__item">
-                  <dt class="information-list__item__definition__item__term">
-                    Mac
-                  </dt>
-                  <dd class="information-list__item__definition__item__definition">Requires macOS 11.0 or later and a
-                    Mac with Apple M1 chip or later.
-                  </dd>
-                </dl>
-              </dd>
-            </div>
-            <!---->
-            <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
-              <dt class="information-list__item__term medium-valign-top">Languages</dt>
-              <dd
-                class="we-truncate we-truncate--multi-line we-truncate--interactive  information-list__item__definition"
-                dir>
+    </div>
+    </section>
 
+    <!---->
+    <section class="l-content-width section section--bordered app-privacy">
+      <div class="section__nav">
+        <h2 class="section__headline section__headline--app-privacy">
+          App Privacy
+        </h2>
 
-                <p data-test-bidi>English</p>
-
-
-
-
-                <!---->
-              </dd>
-
-
-            </div>
-            <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
-              <dt class="information-list__item__term medium-valign-top">Age Rating</dt>
-              <dd class="information-list__item__definition">
-                9+
-
-                <span class="information-list__item__definition">Infrequent/Mild Mature/Suggestive Themes</span>
-              </dd>
-            </div>
-            <!---->
-            <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
-              <dt class="information-list__item__term medium-valign-top">Copyright</dt>
-              <dd class="information-list__item__definition information-list__item__definition--copyright">© SAYHI INC.
-              </dd>
-            </div>
-            <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
-              <dt class="information-list__item__term medium-valign-top">Price</dt>
-              <dd class="information-list__item__definition">Free</dd>
-            </div>
-            <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
-              <dt class="information-list__item__term medium-valign-top">In-App Purchases</dt>
-              <dd class="information-list__item__definition">
-                <ol role="table" class="list-with-numbers">
-                  <div>
-
-                    <li class="list-with-numbers__item">
-                      <span class="list-with-numbers__item__title"><span
-                          class="truncate-single-line truncate-single-line--block">MatchUp Premium: 1
-                          Month</span></span>
-                      <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$14.99</span>
-                    </li>
-
-
-                    <li class="list-with-numbers__item">
-                      <span class="list-with-numbers__item__title"><span
-                          class="truncate-single-line truncate-single-line--block">MatchUp Premium: 1
-                          Month</span></span>
-                      <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$14.99</span>
-                    </li>
-
-
-                    <li class="list-with-numbers__item">
-                      <span class="list-with-numbers__item__title"><span
-                          class="truncate-single-line truncate-single-line--block">MatchUp Premium: 1 Year</span></span>
-                      <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$39.99</span>
-                    </li>
-
-
-                    <li class="list-with-numbers__item">
-                      <span class="list-with-numbers__item__title"><span
-                          class="truncate-single-line truncate-single-line--block">MatchUp Premium: 1 Week</span></span>
-                      <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$7.99</span>
-                    </li>
-
-
-                    <li class="list-with-numbers__item">
-                      <span class="list-with-numbers__item__title"><span
-                          class="truncate-single-line truncate-single-line--block">MatchUp Premium: 1
-                          Month</span></span>
-                      <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$19.99</span>
-                    </li>
-
-
-                    <li class="list-with-numbers__item">
-                      <span class="list-with-numbers__item__title"><span
-                          class="truncate-single-line truncate-single-line--block">Numerology, Horoscopes &
-                          more</span></span>
-                      <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$7.99</span>
-                    </li>
-
-
-                    <li class="list-with-numbers__item">
-                      <span class="list-with-numbers__item__title"><span
-                          class="truncate-single-line truncate-single-line--block">MatchUp Premium: 1 Year</span></span>
-                      <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$49.99</span>
-                    </li>
-
-                    <!---->
-                  </div>
-
-                </ol>
-              </dd>
-            </div>
-
-          </dl>
+        <div class="app-privacy--modal privacy-type--modal">
+          <!---->
+          <!---->
         </div>
-        <div class="small-hide medium-show">
-          <ul class="inline-list inline-list--app-extensions">
-            <li class="inline-list__item inline-list__item--margin-inline-end-large">
-              <a class="link icon icon-after icon-external" data-metrics-click="{"
-                actionDetails":{"type":"developer"},"actionType":"navigate","actionUrl":"@@url@@","targetType":"link","targetId":"@@id@@"}"
-                href="https://match-up.me/app-ads.txt">
-                Developer Website
-              </a>
-            </li>
-            <li class="inline-list__item inline-list__item--margin-inline-end-large">
-              <a class="link icon icon-after icon-external" data-metrics-click="{"
-                actionType":"navigate","targetType":"link","targetId":"LinkToAppSupport"}" href="https://match-up.me">
-                App Support
-              </a>
-            </li>
-            <!---->
-            <li class="inline-list__item inline-list__item--margin-inline-end-large">
-              <a class="link icon icon-after icon-external" data-metrics-click="{"
-                actionType":"navigate","targetType":"link","targetId":"LinkToPrivacyPolicy"}"
-                href="https://match-up.me/Home/Privacy">
-                Privacy Policy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
 
-      <section class="section section--link-list l-content-width medium-hide">
-        <ul class="link-list link-list--a">
-          <li class="link-list__item link-list__item--a">
+
+      </div>
+
+      <p>
+        The developer, <span class="app-privacy__developer-name">SAYHI INC.</span>, indicated that the app’s privacy
+        practices may include handling of data as described below. For more information, see the <a
+          href="https://match-up.me/Home/Privacy">developer’s privacy policy</a>.
+      </p>
+
+      <div class="app-privacy__cards">
+        <div class="app-privacy__card">
+          <div class="privacy-type__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+              <path
+                d="M32.09 61.568c16.185 0 29.586-13.43 29.586-29.587 0-16.186-13.43-29.587-29.616-29.587-16.157 0-29.558 13.4-29.558 29.587 0 16.156 13.43 29.587 29.587 29.587zm0-4.932c-13.692 0-24.628-10.964-24.628-24.655 0-13.692 10.907-24.656 24.598-24.656 13.691 0 24.656 10.964 24.685 24.656.03 13.69-10.965 24.655-24.656 24.655zM28.897 45.76c.958 0 1.77-.464 2.35-1.363L44.504 23.54c.32-.551.696-1.219.696-1.857 0-1.276-1.16-2.117-2.378-2.117-.725 0-1.45.435-2.002 1.305l-12.038 19.29-5.714-7.368c-.696-.928-1.334-1.19-2.146-1.19-1.248 0-2.234 1.016-2.234 2.321 0 .61.261 1.247.667 1.799l7.078 8.673c.725.957 1.508 1.363 2.465 1.363z" />
+            </svg>
+          </div>
+          <h3 class="privacy-type__heading">Data Not Collected</h3>
+          <p class="privacy-type__description">The developer does not collect any data from this app.</p>
+          <!---->
+        </div>
+      </div>
+
+      <p class="app-privacy__learn-more">Privacy practices may vary, for example, based on the features you use or
+        your age. <a href="https://apps.apple.com/story/id1538632801">Learn More</a></p>
+    </section>
+
+
+    <section class="l-content-width section section--bordered section--information ">
+      <div>
+        <h2 class="section__headline">Information</h2>
+        <dl class="information-list information-list--app medium-columns l-row" style="flex-direction:column">
+          <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+            <dt class="information-list__item__term medium-valign-top ">Seller</dt>
+            <dd class="information-list__item__definition">
+              SAYHI INC.
+            </dd>
+          </div>
+          <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top  section--bordered">
+            <dt class="information-list__item__term medium-valign-top">Size</dt>
+            <dd class="information-list__item__definition" aria-label="24.4 megabytes">24.4 MB</dd>
+          </div>
+          <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top  section--bordered">
+            <dt class="information-list__item__term medium-valign-top">Category</dt>
+            <dd class="information-list__item__definition">
+              <a href="https://itunes.apple.com/us/genre/id6012" class="link" data-metrics-click="{"
+                actionType":"navigate","actionUrl":"https: itunes.apple.com us genre
+                id6012","targetType":"link","targetId":"GenrePage"}">
+                Lifestyle
+              </a>
+            </dd>
+          </div>
+          <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top  section--bordered">
+            <dt class="information-list__item__term medium-valign-top">Compatibility</dt>
+            <dd class="information-list__item__definition">
+              <br>
+              <dl class="information-list__item__definition__item">
+                <dt class="information-list__item__definition__item__term">
+                  iPhone
+                </dt>
+                <dd class="information-list__item__definition__item__definition">Requires iOS 12.4 or later.
+                </dd>
+              </dl>
+              <dl class="information-list__item__definition__item">
+                <dt class="information-list__item__definition__item__term">
+                  iPod touch
+                </dt>
+                <dd class="information-list__item__definition__item__definition">Requires iOS 12.4 or later.
+                </dd>
+              </dl>
+              <dl class="information-list__item__definition__item">
+                <dt class="information-list__item__definition__item__term">
+                  Mac
+                </dt>
+                <dd class="information-list__item__definition__item__definition">Requires macOS 11.0 or later and a
+                  Mac with Apple M1 chip or later.
+                </dd>
+              </dl>
+            </dd>
+          </div>
+          <!---->
+          <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top  section--bordered">
+            <dt class="information-list__item__term medium-valign-top">Languages</dt>
+            <dd class="we-truncate we-truncate--multi-line we-truncate--interactive  information-list__item__definition"
+              dir>
+
+
+              <p data-test-bidi>English</p>
+
+
+
+
+              <!---->
+            </dd>
+
+
+          </div>
+          <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top  section--bordered">
+            <dt class="information-list__item__term medium-valign-top">Age Rating</dt>
+            <dd class="information-list__item__definition">
+              9+
+
+              <span class="information-list__item__definition">Infrequent/Mild Mature/Suggestive Themes</span>
+            </dd>
+          </div>
+          <!---->
+          <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top  section--bordered">
+            <dt class="information-list__item__term medium-valign-top">Copyright</dt>
+            <dd class="information-list__item__definition information-list__item__definition--copyright">© SAYHI INC.
+            </dd>
+          </div>
+          <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top  section--bordered">
+            <dt class="information-list__item__term medium-valign-top">Price</dt>
+            <dd class="information-list__item__definition">Free</dd>
+          </div>
+          <div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top  section--bordered">
+            <dt class="information-list__item__term medium-valign-top">In-App Purchases</dt>
+            <dd class="information-list__item__definition">
+              <ol role="table" class="list-with-numbers">
+                <div>
+
+                  <li class="list-with-numbers__item">
+                    <span class="list-with-numbers__item__title"><span
+                        class="truncate-single-line truncate-single-line--block">MatchUp Premium: 1
+                        Month</span></span>
+                    <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$14.99</span>
+                  </li>
+
+
+                  <li class="list-with-numbers__item">
+                    <span class="list-with-numbers__item__title"><span
+                        class="truncate-single-line truncate-single-line--block">MatchUp Premium: 1
+                        Month</span></span>
+                    <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$14.99</span>
+                  </li>
+
+
+                  <li class="list-with-numbers__item">
+                    <span class="list-with-numbers__item__title"><span
+                        class="truncate-single-line truncate-single-line--block">MatchUp Premium: 1 Year</span></span>
+                    <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$39.99</span>
+                  </li>
+
+
+                  <li class="list-with-numbers__item">
+                    <span class="list-with-numbers__item__title"><span
+                        class="truncate-single-line truncate-single-line--block">MatchUp Premium: 1 Week</span></span>
+                    <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$7.99</span>
+                  </li>
+
+
+                  <li class="list-with-numbers__item">
+                    <span class="list-with-numbers__item__title"><span
+                        class="truncate-single-line truncate-single-line--block">MatchUp Premium: 1
+                        Month</span></span>
+                    <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$19.99</span>
+                  </li>
+
+
+                  <li class="list-with-numbers__item">
+                    <span class="list-with-numbers__item__title"><span
+                        class="truncate-single-line truncate-single-line--block">Numerology, Horoscopes &
+                        more</span></span>
+                    <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$7.99</span>
+                  </li>
+
+
+                  <li class="list-with-numbers__item">
+                    <span class="list-with-numbers__item__title"><span
+                        class="truncate-single-line truncate-single-line--block">MatchUp Premium: 1 Year</span></span>
+                    <span class="list-with-numbers__item__price small-hide medium-show-tablecell">$49.99</span>
+                  </li>
+
+                  <!---->
+                </div>
+
+              </ol>
+            </dd>
+          </div>
+
+        </dl>
+      </div>
+      <div class="small-hide medium-show">
+        <ul class="inline-list inline-list--app-extensions">
+          <li class="inline-list__item inline-list__item--margin-inline-end-large">
             <a class="link icon icon-after icon-external" data-metrics-click="{"
               actionDetails":{"type":"developer"},"actionType":"navigate","actionUrl":"@@url@@","targetType":"link","targetId":"@@id@@"}"
               href="https://match-up.me/app-ads.txt">
               Developer Website
             </a>
           </li>
-          <li class="link-list__item link-list__item--a">
+          <li class="inline-list__item inline-list__item--margin-inline-end-large">
             <a class="link icon icon-after icon-external" data-metrics-click="{"
               actionType":"navigate","targetType":"link","targetId":"LinkToAppSupport"}" href="https://match-up.me">
               App Support
             </a>
           </li>
           <!---->
-          <li class="link-list__item link-list__item--a">
+          <li class="inline-list__item inline-list__item--margin-inline-end-large">
             <a class="link icon icon-after icon-external" data-metrics-click="{"
               actionType":"navigate","targetType":"link","targetId":"LinkToPrivacyPolicy"}"
               href="https://match-up.me/Home/Privacy">
@@ -1214,656 +1295,45 @@ What kind of person are you and your lover? Every human has unique characteristi
             </a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <!---->
-      <!---->
-      <!---->
-      <section class="l-content-width section section--bordered">
-        <div class="section__nav">
-          <h2 class="section__headline">
-            You Might Also Like
-          </h2>
-          <!---->
-        </div>
-
-        <div class="l-row l-row--peek">
-
-
-          <a href="https://apps.apple.com/us/app/adastra-psychic-tarot-reading/id1445690477"
-            class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top we-lockup--in-app-shelf"
-            aria-label="AdAstra Psychic. Tarot Reading. Lifestyle." data-metrics-click="{"
-            actionType":"navigate","actionUrl":"https: apps.apple.com us app adastra-psychic-tarot-reading
-            id1445690477","targetType":"card","targetId":"1445690477"}" data-metrics-location="{"
-            locationType":"shelfCustomersAlsoBoughtApps"}">
-            <!---->
-            <div class="we-lockup__overlay">
-              <picture
-                class="we-artwork we-artwork--downloaded we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon"
-                style="--background-color: #8228d8;" dir="ltr" id="ember176791">
-
-                <source
-                  srcset="images/PAdTF21fhaDt.webp 320w, images/0PNcInlcCavk.webp 157w, images/oO0JO3mNPZUq.webp 146w, images/yGi6EScG4UqW.webp 640w, images/Or0GzxhrKJqA.webp 314w, images/tcOyRGTXg08A.webp 292w"
-                  sizes="(max-width: 734px) 320px, (min-width: 735px) and (max-width: 1068px) 157px, 146px"
-                  type="image/webp">
-
-                <source
-                  srcset="images/afZmheKNZajc.png 320w, images/iRanLijtwXM2.png 157w, images/4xhBcFeZFsTI.png 146w, images/tTRLUmDuvfKV.png 640w, images/W4M0Tf04Ojti.png 314w, images/l6fde1PIVxyf.png 292w"
-                  sizes="(max-width: 734px) 320px, (min-width: 735px) and (max-width: 1068px) 157px, 146px"
-                  type="image/png">
-
-                <img src="images/il3A2H37WllM.gif" decoding="async" loading="lazy"
-                  class="we-artwork__image ember176791  we-artwork__image--lazyload" alt role="presentation"
-                  height="320" width="320">
-
-
-                <style>
-                  .ember176791,
-                  #ember176791::before {
-                    width: 320px;
-                    height: 320px;
-                  }
-
-                  .ember176791::before {
-                    padding-top: 100%;
-                  }
-
-                  @media (min-width: 735px) {
-
-                    .ember176791,
-                    #ember176791::before {
-                      width: 157px;
-                      height: 157px;
-                    }
-
-                    .ember176791::before {
-                      padding-top: 100%;
-                    }
-                  }
-
-                  @media (min-width: 1069px) {
-
-                    .ember176791,
-                    #ember176791::before {
-                      width: 146px;
-                      height: 146px;
-                    }
-
-                    .ember176791::before {
-                      padding-top: 100%;
-                    }
-                  }
-                </style>
-              </picture>
-
-              <div class="we-lockup__material"></div>
-              <div class="we-lockup__joe-color"></div>
-            </div>
-
-            <div class="we-lockup__copy">
-              <!---->
-              <div class="we-lockup__text">
-                <!---->
-                <!---->
-                <div class="we-lockup__title ">
-                  <div class="we-truncate we-truncate--multi-line  targeted-link__target" dir>
-
-
-                    <p dir="false" data-test-bidi>AdAstra Psychic. Tarot Reading</p>
-
-
-
-                    <!---->
-                  </div>
-
-
-                </div>
-
-                <div class="we-truncate we-truncate--single-line  we-lockup__subtitle" dir="ltr">
-                  Lifestyle
-                </div>
-
-
-                <!---->
-              </div>
-            </div>
+    <section class="section section--link-list l-content-width medium-hide">
+      <ul class="link-list link-list--a">
+        <li class="link-list__item link-list__item--a">
+          <a class="link icon icon-after icon-external" data-metrics-click="{"
+            actionDetails":{"type":"developer"},"actionType":"navigate","actionUrl":"@@url@@","targetType":"link","targetId":"@@id@@"}"
+            href="https://match-up.me/app-ads.txt">
+            Developer Website
           </a>
-
-
-
-
-
-
-          <a href="https://apps.apple.com/us/app/heyou-live-video-chat-app/id1562273220"
-            class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top we-lockup--in-app-shelf"
-            aria-label="Heyou: Live Video Chat App. Lifestyle." data-metrics-click="{"
-            actionType":"navigate","actionUrl":"https: apps.apple.com us app heyou-live-video-chat-app
-            id1562273220","targetType":"card","targetId":"1562273220"}" data-metrics-location="{"
-            locationType":"shelfCustomersAlsoBoughtApps"}">
-            <!---->
-            <div class="we-lockup__overlay">
-              <picture
-                class="we-artwork we-artwork--downloaded we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon"
-                style="--background-color: #0e061f;" dir="ltr" id="ember176792">
-
-                <source
-                  srcset="images/RRrMOwUFPY7v.webp 320w, images/hrO8G4EffokO.webp 157w, images/msehSLkxIrld.webp 146w, images/c05TiygtNcDV.webp 640w, images/LC4W63gFPjgL.webp 314w, images/YBPZLkGKOadP.webp 292w"
-                  sizes="(max-width: 734px) 320px, (min-width: 735px) and (max-width: 1068px) 157px, 146px"
-                  type="image/webp">
-
-                <source
-                  srcset="images/3lQ1rAA9Awfo.png 320w, images/paAUVnH2mBjf.png 157w, images/E8Uyp1tdfgjX.png 146w, images/GZLEIecRbJrk.png 640w, images/VCsawQ9cHeo8.png 314w, images/9gqgojUSEgYF.png 292w"
-                  sizes="(max-width: 734px) 320px, (min-width: 735px) and (max-width: 1068px) 157px, 146px"
-                  type="image/png">
-
-                <img src="images/il3A2H37WllM.gif" decoding="async" loading="lazy"
-                  class="we-artwork__image ember176792  we-artwork__image--lazyload" alt role="presentation"
-                  height="320" width="320">
-
-
-                <style>
-                  .ember176792,
-                  #ember176792::before {
-                    width: 320px;
-                    height: 320px;
-                  }
-
-                  .ember176792::before {
-                    padding-top: 100%;
-                  }
-
-                  @media (min-width: 735px) {
-
-                    .ember176792,
-                    #ember176792::before {
-                      width: 157px;
-                      height: 157px;
-                    }
-
-                    .ember176792::before {
-                      padding-top: 100%;
-                    }
-                  }
-
-                  @media (min-width: 1069px) {
-
-                    .ember176792,
-                    #ember176792::before {
-                      width: 146px;
-                      height: 146px;
-                    }
-
-                    .ember176792::before {
-                      padding-top: 100%;
-                    }
-                  }
-                </style>
-              </picture>
-
-              <div class="we-lockup__material"></div>
-              <div class="we-lockup__joe-color"></div>
-            </div>
-
-            <div class="we-lockup__copy">
-              <!---->
-              <div class="we-lockup__text">
-                <!---->
-                <!---->
-                <div class="we-lockup__title ">
-                  <div class="we-truncate we-truncate--multi-line  targeted-link__target" dir>
-
-
-                    <p dir="false" data-test-bidi>Heyou: Live Video Chat App</p>
-
-
-
-                    <!---->
-                  </div>
-
-
-                </div>
-
-                <div class="we-truncate we-truncate--single-line  we-lockup__subtitle" dir="ltr">
-                  Lifestyle
-                </div>
-
-
-                <!---->
-              </div>
-            </div>
+        </li>
+        <li class="link-list__item link-list__item--a">
+          <a class="link icon icon-after icon-external" data-metrics-click="{"
+            actionType":"navigate","targetType":"link","targetId":"LinkToAppSupport"}" href="https://match-up.me">
+            App Support
           </a>
-
-
-
-
-
-
-          <a href="https://apps.apple.com/us/app/3some-threesome-swingers-app/id1562795348"
-            class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top we-lockup--in-app-shelf"
-            aria-label="3Some: Threesome, Swingers App. Lifestyle." data-metrics-click="{"
-            actionType":"navigate","actionUrl":"https: apps.apple.com us app 3some-threesome-swingers-app
-            id1562795348","targetType":"card","targetId":"1562795348"}" data-metrics-location="{"
-            locationType":"shelfCustomersAlsoBoughtApps"}">
-            <!---->
-            <div class="we-lockup__overlay">
-              <picture
-                class="we-artwork we-artwork--downloaded we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon"
-                style="--background-color: #ffffff;" dir="ltr" id="ember176793">
-
-                <source
-                  srcset="images/mdq0HfZWKnkX.webp 320w, images/xDu13ixGAeVv.webp 157w, images/acraTqvgSseA.webp 146w, images/H0jiUqmhpXL4.webp 640w, images/vRGUXEaECxXL.webp 314w, images/7AHPzHGVCcR4.webp 292w"
-                  sizes="(max-width: 734px) 320px, (min-width: 735px) and (max-width: 1068px) 157px, 146px"
-                  type="image/webp">
-
-                <source
-                  srcset="images/D3O25Gsakgvt.png 320w, images/XYSCAVsDhcm6.png 157w, images/qHZ6NgZaLlF6.png 146w, images/JZ75d5lKKCth.png 640w, images/DJkp8e0lkP8e.png 314w, images/9sYo6hlntofq.png 292w"
-                  sizes="(max-width: 734px) 320px, (min-width: 735px) and (max-width: 1068px) 157px, 146px"
-                  type="image/png">
-
-                <img src="images/il3A2H37WllM.gif" decoding="async" loading="lazy"
-                  class="we-artwork__image ember176793  we-artwork__image--lazyload" alt role="presentation"
-                  height="320" width="320">
-
-
-                <style>
-                  .ember176793,
-                  #ember176793::before {
-                    width: 320px;
-                    height: 320px;
-                  }
-
-                  .ember176793::before {
-                    padding-top: 100%;
-                  }
-
-                  @media (min-width: 735px) {
-
-                    .ember176793,
-                    #ember176793::before {
-                      width: 157px;
-                      height: 157px;
-                    }
-
-                    .ember176793::before {
-                      padding-top: 100%;
-                    }
-                  }
-
-                  @media (min-width: 1069px) {
-
-                    .ember176793,
-                    #ember176793::before {
-                      width: 146px;
-                      height: 146px;
-                    }
-
-                    .ember176793::before {
-                      padding-top: 100%;
-                    }
-                  }
-                </style>
-              </picture>
-
-              <div class="we-lockup__material"></div>
-              <div class="we-lockup__joe-color"></div>
-            </div>
-
-            <div class="we-lockup__copy">
-              <!---->
-              <div class="we-lockup__text">
-                <!---->
-                <!---->
-                <div class="we-lockup__title ">
-                  <div class="we-truncate we-truncate--multi-line  targeted-link__target" dir>
-
-
-                    <p dir="false" data-test-bidi>3Some: Threesome, Swingers App</p>
-
-
-
-                    <!---->
-                  </div>
-
-
-                </div>
-
-                <div class="we-truncate we-truncate--single-line  we-lockup__subtitle" dir="ltr">
-                  Lifestyle
-                </div>
-
-
-                <!---->
-              </div>
-            </div>
+        </li>
+        <!---->
+        <li class="link-list__item link-list__item--a">
+          <a class="link icon icon-after icon-external" data-metrics-click="{"
+            actionType":"navigate","targetType":"link","targetId":"LinkToPrivacyPolicy"}"
+            href="https://match-up.me/Home/Privacy">
+            Privacy Policy
           </a>
+        </li>
+      </ul>
+    </section>
 
+    <!---->
+    <!---->
+    <!---->
 
 
 
+    <!---->
 
-
-          <a href="https://apps.apple.com/us/app/gojournal-diary-planner/id1596865689"
-            class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top we-lockup--in-app-shelf"
-            aria-label="GoJournal: Diary & Planner. Lifestyle." data-metrics-click="{"
-            actionType":"navigate","actionUrl":"https: apps.apple.com us app gojournal-diary-planner
-            id1596865689","targetType":"card","targetId":"1596865689"}" data-metrics-location="{"
-            locationType":"shelfCustomersAlsoBoughtApps"}">
-            <!---->
-            <div class="we-lockup__overlay">
-              <picture
-                class="we-artwork we-artwork--downloaded we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon"
-                style="--background-color: #5c44c8;" dir="ltr" id="ember176794">
-
-                <source
-                  srcset="images/NUFXwdnuFWvX.webp 320w, images/DJ5kNOxCgvrX.webp 157w, images/wlp8wl5PrCeM.webp 146w, images/xMN1fudAwU8Z.webp 640w, images/CAe7hCAiIFnW.webp 314w, images/sTF2Y46Z9evM.webp 292w"
-                  sizes="(max-width: 734px) 320px, (min-width: 735px) and (max-width: 1068px) 157px, 146px"
-                  type="image/webp">
-
-                <source
-                  srcset="images/6fXI1wYgvceE.png 320w, images/suNLeuQQvum4.png 157w, images/IyO6tpVzqbxB.png 146w, images/q7AJ21OfKH8P.png 640w, images/uhsMOazhCWwU.png 314w, images/qESZAH2575H7.png 292w"
-                  sizes="(max-width: 734px) 320px, (min-width: 735px) and (max-width: 1068px) 157px, 146px"
-                  type="image/png">
-
-                <img src="images/il3A2H37WllM.gif" decoding="async" loading="lazy"
-                  class="we-artwork__image ember176794  we-artwork__image--lazyload" alt role="presentation"
-                  height="320" width="320">
-
-
-                <style>
-                  .ember176794,
-                  #ember176794::before {
-                    width: 320px;
-                    height: 320px;
-                  }
-
-                  .ember176794::before {
-                    padding-top: 100%;
-                  }
-
-                  @media (min-width: 735px) {
-
-                    .ember176794,
-                    #ember176794::before {
-                      width: 157px;
-                      height: 157px;
-                    }
-
-                    .ember176794::before {
-                      padding-top: 100%;
-                    }
-                  }
-
-                  @media (min-width: 1069px) {
-
-                    .ember176794,
-                    #ember176794::before {
-                      width: 146px;
-                      height: 146px;
-                    }
-
-                    .ember176794::before {
-                      padding-top: 100%;
-                    }
-                  }
-                </style>
-              </picture>
-
-              <div class="we-lockup__material"></div>
-              <div class="we-lockup__joe-color"></div>
-            </div>
-
-            <div class="we-lockup__copy">
-              <!---->
-              <div class="we-lockup__text">
-                <!---->
-                <!---->
-                <div class="we-lockup__title ">
-                  <div class="we-truncate we-truncate--multi-line  targeted-link__target" dir>
-
-
-                    <p dir="false" data-test-bidi>GoJournal: Diary & Planner</p>
-
-
-
-                    <!---->
-                  </div>
-
-
-                </div>
-
-                <div class="we-truncate we-truncate--single-line  we-lockup__subtitle" dir="ltr">
-                  Lifestyle
-                </div>
-
-
-                <!---->
-              </div>
-            </div>
-          </a>
-
-
-
-
-
-
-          <a href="https://apps.apple.com/us/app/watch-faces-watch-face/id1610027717"
-            class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top we-lockup--in-app-shelf"
-            aria-label="Watch Faces - Watch face. Lifestyle." data-metrics-click="{"
-            actionType":"navigate","actionUrl":"https: apps.apple.com us app watch-faces-watch-face
-            id1610027717","targetType":"card","targetId":"1610027717"}" data-metrics-location="{"
-            locationType":"shelfCustomersAlsoBoughtApps"}">
-            <!---->
-            <div class="we-lockup__overlay">
-              <picture
-                class="we-artwork we-artwork--downloaded we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon"
-                style="--background-color: #0a0649;" dir="ltr" id="ember176795">
-
-                <source
-                  srcset="images/43nO8hSWmO0O.webp 320w, images/1TXyNFOb7mqw.webp 157w, images/MjF7BfV2C3Dj.webp 146w, images/CQmxvrlViDdj.webp 640w, images/c7cRIWZD2f6X.webp 314w, images/pDGjNCKF4gBW.webp 292w"
-                  sizes="(max-width: 734px) 320px, (min-width: 735px) and (max-width: 1068px) 157px, 146px"
-                  type="image/webp">
-
-                <source
-                  srcset="images/2YseRkrhOEkO.png 320w, images/BkCd0WAB3mzW.png 157w, images/xMdzC97PYCVm.png 146w, images/ySnebT2xK5lB.png 640w, images/gA5gXpLwrTQS.png 314w, images/rOEZ2krKyUyZ.png 292w"
-                  sizes="(max-width: 734px) 320px, (min-width: 735px) and (max-width: 1068px) 157px, 146px"
-                  type="image/png">
-
-                <img src="images/il3A2H37WllM.gif" decoding="async" loading="lazy"
-                  class="we-artwork__image ember176795  we-artwork__image--lazyload" alt role="presentation"
-                  height="320" width="320">
-
-
-                <style>
-                  .ember176795,
-                  #ember176795::before {
-                    width: 320px;
-                    height: 320px;
-                  }
-
-                  .ember176795::before {
-                    padding-top: 100%;
-                  }
-
-                  @media (min-width: 735px) {
-
-                    .ember176795,
-                    #ember176795::before {
-                      width: 157px;
-                      height: 157px;
-                    }
-
-                    .ember176795::before {
-                      padding-top: 100%;
-                    }
-                  }
-
-                  @media (min-width: 1069px) {
-
-                    .ember176795,
-                    #ember176795::before {
-                      width: 146px;
-                      height: 146px;
-                    }
-
-                    .ember176795::before {
-                      padding-top: 100%;
-                    }
-                  }
-                </style>
-              </picture>
-
-              <div class="we-lockup__material"></div>
-              <div class="we-lockup__joe-color"></div>
-            </div>
-
-            <div class="we-lockup__copy">
-              <!---->
-              <div class="we-lockup__text">
-                <!---->
-                <!---->
-                <div class="we-lockup__title ">
-                  <div class="we-truncate we-truncate--multi-line  targeted-link__target" dir>
-
-
-                    <p dir="false" data-test-bidi>Watch Faces - Watch face</p>
-
-
-
-                    <!---->
-                  </div>
-
-
-                </div>
-
-                <div class="we-truncate we-truncate--single-line  we-lockup__subtitle" dir="ltr">
-                  Lifestyle
-                </div>
-
-
-                <!---->
-              </div>
-            </div>
-          </a>
-
-
-
-
-
-
-          <a href="https://apps.apple.com/us/app/kls-make-new-kinky-friends/id1617230085"
-            class="we-lockup targeted-link l-column small-2 medium-3 large-2 we-lockup--shelf-align-top we-lockup--in-app-shelf"
-            aria-label="KLS: Make new kinky friends. Lifestyle." data-metrics-click="{"
-            actionType":"navigate","actionUrl":"https: apps.apple.com us app kls-make-new-kinky-friends
-            id1617230085","targetType":"card","targetId":"1617230085"}" data-metrics-location="{"
-            locationType":"shelfCustomersAlsoBoughtApps"}">
-            <!---->
-            <div class="we-lockup__overlay">
-              <picture
-                class="we-artwork we-artwork--downloaded we-lockup__artwork we-artwork--lockup we-artwork--fullwidth we-artwork--ios-app-icon"
-                style="--background-color: #ffffff;" dir="ltr" id="ember176796">
-
-                <source
-                  srcset="images/a7ucp5Zr1e1A.webp 320w, images/dg45001c1uKi.webp 157w, images/GrITsSvWgBCY.webp 146w, images/qy0imHRZcqMo.webp 640w, images/xjRhUpWctSNQ.webp 314w, images/ap3LnVPeAArW.webp 292w"
-                  sizes="(max-width: 734px) 320px, (min-width: 735px) and (max-width: 1068px) 157px, 146px"
-                  type="image/webp">
-
-                <source
-                  srcset="images/QDzEFydvli0K.png 320w, images/gUxdOiCwqfAl.png 157w, images/tMfRl6KUHvOb.png 146w, images/6jhTG1XW3NVa.png 640w, images/PagsnleMNEvF.png 314w, images/zHRIcWJA22Me.png 292w"
-                  sizes="(max-width: 734px) 320px, (min-width: 735px) and (max-width: 1068px) 157px, 146px"
-                  type="image/png">
-
-                <img src="images/il3A2H37WllM.gif" decoding="async" loading="lazy"
-                  class="we-artwork__image ember176796  we-artwork__image--lazyload" alt role="presentation"
-                  height="320" width="320">
-
-
-                <style>
-                  .ember176796,
-                  #ember176796::before {
-                    width: 320px;
-                    height: 320px;
-                  }
-
-                  .ember176796::before {
-                    padding-top: 100%;
-                  }
-
-                  @media (min-width: 735px) {
-
-                    .ember176796,
-                    #ember176796::before {
-                      width: 157px;
-                      height: 157px;
-                    }
-
-                    .ember176796::before {
-                      padding-top: 100%;
-                    }
-                  }
-
-                  @media (min-width: 1069px) {
-
-                    .ember176796,
-                    #ember176796::before {
-                      width: 146px;
-                      height: 146px;
-                    }
-
-                    .ember176796::before {
-                      padding-top: 100%;
-                    }
-                  }
-                </style>
-              </picture>
-
-              <div class="we-lockup__material"></div>
-              <div class="we-lockup__joe-color"></div>
-            </div>
-
-            <div class="we-lockup__copy">
-              <!---->
-              <div class="we-lockup__text">
-                <!---->
-                <!---->
-                <div class="we-lockup__title ">
-                  <div class="we-truncate we-truncate--multi-line  targeted-link__target" dir>
-
-
-                    <p dir="false" data-test-bidi>KLS: Make new kinky friends</p>
-
-
-
-                    <!---->
-                  </div>
-
-
-                </div>
-
-                <div class="we-truncate we-truncate--single-line  we-lockup__subtitle" dir="ltr">
-                  Lifestyle
-                </div>
-
-
-                <!---->
-              </div>
-            </div>
-          </a>
-
-
-
-
-
-
-        </div>
-      </section>
-
-
-      <!---->
-
-      <!---->
+    <!---->
     </div>
-
-
 
   </main>
   </div>
@@ -1899,6 +1369,9 @@ What kind of person are you and your lover? Every human has unique characteristi
       </section>
     </div>
   </footer>
+
+
+
   <script type="fastboot/shoebox" id="shoebox-language-code">"en-us"</script>
   <script type="fastboot/shoebox"
     id="shoebox-ember-localizer">{"en-us":{"WEA.AppBundlePages.AppBundle":"App Bundle @@appPrice@@","WEA.AppBundlePages.NumberAppsInBundle.Many":"@@count@@ Apps in This Bundle","WEA.AppBundlePages.PurchasedSeparately":"Purchased Separately: @@price@@","WEA.AppEventPages.Meta.Keywords":"App Store","WEA.AppEventPages.Meta.Title":"@@softwareName@@: @@description@@","WEA.AppPages.AX.ViewIn":"View On","WEA.AppPages.AdditionalScreenshots":"Additional Screenshots","WEA.AppPages.AgeRating":"Age Rating","WEA.AppPages.AgeRating.Value":"@@ageRating@@, Made for Ages @@min@@–@@max@@","WEA.AppPages.AppPrivacy.Description":"The developer, @@developer@@, indicated that the app’s privacy practices may include handling of data as described below. ","WEA.AppPages.AppPrivacy.Description.ManagePrivacy":"Learn how the developer lets you @@managePrivacyLink@@.","WEA.AppPages.AppPrivacy.Description.ManagePrivacy.Link":"manage your privacy choices","WEA.AppPages.AppPrivacy.Description.NoDetails":"The developer, @@developer@@, has not provided details about its privacy practices and handling of data to Apple. ","WEA.AppPages.AppPrivacy.Description.NotVerifiedByApple":"This information has not been verified by Apple. ","WEA.AppPages.AppPrivacy.Description.PrivacyDefinitions":"To help you better understand the developer’s responses, see @@privacyDefinitionsLink@@.","WEA.AppPages.AppPrivacy.Description.PrivacyDefinitions.Link":"Privacy Definitions and Examples","WEA.AppPages.AppPrivacy.Description.PrivacyPolicy":"For more information, see the @@privacyPolicyLink@@.","WEA.AppPages.AppPrivacy.Description.PrivacyPolicy.Link":"developer’s privacy policy","WEA.AppPages.AppPrivacy.LearnMore":"Privacy practices may vary, for example, based on the features you use or your age. @@learnMoreLink@@","WEA.AppPages.AppPrivacy.LearnMore.Link":"Learn More","WEA.AppPages.AppPrivacy.Title":"App Privacy","WEA.AppPages.AppPrivacy.Types.NoDetails.Description":"The developer will be required to provide privacy details when they submit their next app update.","WEA.AppPages.AppPrivacy.Types.NoDetails.Title":"No Details Provided","WEA.AppPages.AppStore.Header":"App Store","WEA.AppPages.AppSupport":"App Support","WEA.AppPages.AppleTV":"Apple TV","WEA.AppPages.AppleWatch":"Apple Watch","WEA.AppPages.Arcade.Branding.Title":"Apple Arcade","WEA.AppPages.Arcade.Disclaimer":"*New subscribers only. Sign-up required. Subscription automatically renews for a monthly fee after trial.","WEA.AppPages.Arcade.Editorial.Author":"App Store Editors","WEA.AppPages.Arcade.Link.URL":"https://www.apple.com/apple-arcade/","WEA.AppPages.Arcade.UpsellBanner.CTA.Text":"Try It Free*","WEA.AppPages.Arcade.UpsellBanner.Text":"No ads.","WEA.AppPages.Arcade.UpsellBanner.Text2":"No in-app purchases.","WEA.AppPages.Arcade.UpsellBanner.Title":"Play over 200 games.","WEA.AppPages.Arcade.UpsellFooter.CTA.Text":"Try It Free*","WEA.AppPages.Arcade.UpsellFooter.Text":"No ads.","WEA.AppPages.Arcade.UpsellFooter.Text2":"No in-app purchases.","WEA.AppPages.Arcade.UpsellFooter.Title":"Play over 200 games.","WEA.AppPages.Availability.iOS":"This app is available only on the App Store for iPhone and iPad.","WEA.AppPages.Availability.iOS.Bundle":"This app bundle is available only on the App Store for iPhone and iPad.","WEA.AppPages.Availability.iOS.iPad":"This app is available only on the App Store for iPad.","WEA.AppPages.Availability.iOS.iPhone":"This app is available only on the App Store for iPhone.","WEA.AppPages.Availability.iOS.isiOS":"Open the App Store to buy and download apps.","WEA.AppPages.Availability.iOSmacOS":"This app is available only on the App Store for iPhone, iPad, and Mac.","WEA.AppPages.Availability.iOSmacOSwatchOS":"This app is available only on the App Store for iPhone, iPad, Mac, and Apple Watch.","WEA.AppPages.Availability.iOStvOS":"This app is available only on the App Store for iPhone, iPad, and Apple TV.","WEA.AppPages.Availability.iOStvOSmacOS":"This app is available only on the App Store for iPhone, iPad, Mac, and Apple TV.","WEA.AppPages.Availability.iOStvOSmacOSwatchOS":"This app is available only on the App Store for iPhone, iPad, Mac, Apple Watch, and Apple TV.","WEA.AppPages.Availability.iOStvOSwatchOS":"This app is available only on the App Store for iPhone, iPad, Apple Watch, and Apple TV.","WEA.AppPages.Availability.iOSwatchOS":"This app is available only on the App Store for iPhone, iPad, and Apple Watch.","WEA.AppPages.Availability.iOSwatchOS.NoiPad":"This app is available only on the App Store for iPhone and Apple Watch.","WEA.AppPages.Availability.macOS":"Open the Mac App Store to buy and download apps.","WEA.AppPages.Availability.macOS.Bundle":"This app bundle is available only on the Mac App Store.","WEA.AppPages.Availability.tvOS":"This app is available only on the App Store for Apple TV.","WEA.AppPages.Availability.watchOS":"This app is available only on the App Store for Apple Watch.","WEA.AppPages.CTA.AppStore.AX":"View in App Store","WEA.AppPages.CTA.AppStore.Action":"View in","WEA.AppPages.CTA.AppStore.App":"App Store","WEA.AppPages.CTA.AppleSchool.AX":"View in Apple School","WEA.AppPages.CTA.AppleSchool.Action":"View in","WEA.AppPages.CTA.AppleSchool.App":"Apple School","WEA.AppPages.CTA.MacAppStore.AX":"View in Mac App Store","WEA.AppPages.CTA.MacAppStore.Action":"View in","WEA.AppPages.CTA.MacAppStore.App":"Mac App Store","WEA.AppPages.Category":"Category","WEA.AppPages.Compatibility":"Compatibility","WEA.AppPages.Copyright":"Copyright","WEA.AppPages.CustomerReviews.Title":"Ratings and Reviews","WEA.AppPages.CustomersAlsoBought.Title":"You Might Also Like","WEA.AppPages.Description.Header":"Description","WEA.AppPages.DesignedFor.iPad":"Designed for iPad","WEA.AppPages.DesignedFor.iPhone":"Designed for iPhone","WEA.AppPages.DeveloperResponse":"Developer Response","WEA.AppPages.DeveloperWebsite":"Developer Website","WEA.AppPages.EditReview":"To edit your review of this app, use an iPhone or iPad to view the app on the App Store.","WEA.AppPages.EditReview.macOS.OldmacOS":"To edit your review, view this app in the Mac App Store.","WEA.AppPages.EditorsChoice":"Editors’ Choice","WEA.AppPages.EditorsNotes.Header":"Editors’ Notes","WEA.AppPages.Eula.Error":"Something went wrong. Try again.","WEA.AppPages.Eula.Title":"@@appName@@ @@version@@ License Agreement","WEA.AppPages.Events.Status.Ended":"EVENT ENDED","WEA.AppPages.Events.Status.HappeningNow":"HAPPENING NOW","WEA.AppPages.Events.Status.Live":"LIVE","WEA.AppPages.Events.Status.NowAvailable":"NOW AVAILABLE","WEA.AppPages.Events.Title":"Events","WEA.AppPages.ExpectedReleaseDate":"Expected @@expectedReleaseDate@@","WEA.AppPages.ExternalPurchaseBanner.CTA.Text":"Learn More","WEA.AppPages.ExternalPurchaseBanner.Text":"This app doesn't support the App Store's private and secure payment system. It uses external purchases.","WEA.AppPages.ExternalPurchaseBanner.Text.NL":"All payments in this app will be managed by the developer. This app uses external purchases.","WEA.AppPages.ExternalPurchaseInformation.CTA.Text":"Learn More","WEA.AppPages.ExternalPurchaseInformation.Text":"All purchases in this app will be managed by the developer. Your stored App Store payment method and related features, such as subscription management, Ask to Buy, Family Sharing, and refund requests, will not be available. Apple is not responsible for the privacy or security of transactions made with this developer.","WEA.AppPages.ExternalPurchaseInformation.Text.NL":"All purchases in this app will be processed by a service provider selected by the developer “@@developerName@@.” The developer will be responsible for the payment methods and related features such as subscriptions and refunds. App Store features, such as your stored App Store payment method, subscription management, and refund requests, will not be available.","WEA.AppPages.ExternalPurchaseInformation.Text.noDeveloper.NL":"All purchases in this app will be processed by a service provider selected by the developer. The developer will be responsible for the payment methods and related features such as subscriptions and refunds. App Store features, such as your stored App Store payment method, subscription management, and refund requests, will not be available.","WEA.AppPages.ExternalPurchaseInformation.Title":"External Purchases","WEA.AppPages.FB.siteName.desktopApp":"Mac App Store","WEA.AppPages.FB.siteName.iosSoftware":"App Store","WEA.AppPages.FB.siteName.mobileSoftwareBundle":"App Store","WEA.AppPages.FamilySharing":"Family Sharing","WEA.AppPages.FeaturedIn.Title":"Featured In","WEA.AppPages.GameController":"Game Controller","WEA.AppPages.InAppPurchase.Title":"In-App Purchases","WEA.AppPages.InAppPurchases.Title":"In-App Purchases","WEA.AppPages.Information.Title":"Information","WEA.AppPages.Languages":"Languages","WEA.AppPages.LicenseAgreement":"License Agreement","WEA.AppPages.Location.Description":"This app may use your location even when it isn’t open, which can decrease battery life.","WEA.AppPages.Location.Title":"Location","WEA.AppPages.MacAppStore.Header":"Mac App Store","WEA.AppPages.Meta.MacAppPageMetaDescriptionLine":"Read reviews, compare customer ratings, see screenshots, and learn more about @@softwareName@@. Download @@softwareName@@ for macOS @@minimumOSVersion@@ or later and enjoy it on your Mac.","WEA.AppPages.Meta.MacAppPageMetaKeywords":"@@softwareName@@, @@developerName@@, @@categoryNames@@, mac apps, app store, appstore, applications, itunes","WEA.AppPages.Meta.MacAppStorePageTitle":"@@softwareName@@ on the Mac App Store","WEA.AppPages.Meta.PageMetaDescriptionLine":"Read reviews, compare customer ratings, see screenshots, and learn more about @@softwareName@@. Download @@softwareName@@ and enjoy it on your iPhone, iPad, and iPod touch.","WEA.AppPages.Meta.PageMetaKeywords":"@@softwareName@@, @@developerName@@, @@categoryNames@@, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes","WEA.AppPages.Meta.iOSmacOSPageMetaDescriptionLine":"Read reviews, compare customer ratings, see screenshots, and learn more about @@softwareName@@. Download @@softwareName@@ and enjoy it on your iPhone, iPad, iPod touch, or Mac OS X @@minimumOSVersion@@ or later.","WEA.AppPages.Meta.iOSmacOSPageMetaKeywords":"@@softwareName@@, @@developerName@@, @@categoryNames@@, ios apps, mac apps, app, appstore, app store, applications, iphone, ipad, ipod touch, itouch, itunes","WEA.AppPages.Meta.iOSmacOSwatchOSPageMetaDescriptionLine":"Read reviews, compare customer ratings, see screenshots, and learn more about @@softwareName@@. Download @@softwareName@@ and enjoy it on your iPhone, iPad, iPod touch, Mac OS X @@minimumOSVersion@@ or later, or Apple Watch.","WEA.AppPages.Meta.iOSmacOSwatchOSPageMetaKeywords":"@@softwareName@@, @@developerName@@, @@categoryNames@@, ios apps, mac apps, watchos apps, app, appstore, app store, applications, iphone, ipad, ipod touch, itouch, itunes, apple watch","WEA.AppPages.Meta.iOStvOSmacOSPageMetaDescriptionLine":"Read reviews, compare customer ratings, see screenshots, and learn more about @@softwareName@@. Download @@softwareName@@ and enjoy it on your iPhone, iPad, iPod touch, Mac OS X @@minimumOSVersion@@ or later, or Apple TV.","WEA.AppPages.Meta.iOStvOSmacOSPageMetaKeywords":"@@softwareName@@, @@developerName@@, @@categoryNames@@, ios apps, tvos apps, mac apps, app, appstore, app store, applications, iphone, ipad, ipod touch, itouch, itunes, appletv, apple tv","WEA.AppPages.Meta.iOStvOSmacOSwatchOSPageMetaDescriptionLine":"Read reviews, compare customer ratings, see screenshots, and learn more about @@softwareName@@. Download @@softwareName@@ and enjoy it on your iPhone, iPad, iPod touch, Mac OS X @@minimumOSVersion@@ or later, Apple TV, or Apple Watch.","WEA.AppPages.Meta.iOStvOSmacOSwatchOSPageMetaKeywords":"@@softwareName@@, @@developerName@@, @@categoryNames@@, ios apps, tvos apps, mac apps, watchos apps, app, appstore, app store, applications, iphone, ipad, ipod touch, itouch, itunes, appletv, apple tv, apple watch","WEA.AppPages.Meta.title":"@@softwareName@@ on the App Store","WEA.AppPages.Meta.tvOSAppPageMetaDescriptionLine":"Read reviews, compare customer ratings, see screenshots, and learn more about @@softwareName@@. Download @@softwareName@@ and enjoy it on your Apple TV.","WEA.AppPages.Meta.tvOSAppPageMetaKeywords":"@@softwareName@@, @@developerName@@, @@categoryNames@@, tvos apps, app, appstore, app store, appletv, apple tv","WEA.AppPages.Meta.tvOSAppPagetitle":"@@softwareName@@ on the App Store","WEA.AppPages.MoreAppsByDeveloperName":"More Apps by @@developerName@@","WEA.AppPages.MoreByThisDeveloper.Title":"More By This Developer","WEA.AppPages.OffersAppleWatchApp":"Offers Apple Watch App","WEA.AppPages.OffersAppleWatchAppForiPhone":"Offers Apple Watch App for iPhone","WEA.AppPages.OffersExternalPurchases":"Offers External Purchases","WEA.AppPages.OffersInAppPurchases":"Offers In-App Purchases","WEA.AppPages.OffersiMessageApp":"Offers iMessage App","WEA.AppPages.OffersiMessageAppForiOS":"Offers iMessage App for iOS","WEA.AppPages.OnlyForAppleTV":"Only for Apple TV","WEA.AppPages.OnlyForiMessage":"Only for iMessage","WEA.AppPages.Optional":"Optional","WEA.AppPages.PreOrder":"Pre-Order","WEA.AppPages.PreOrderDisclaimer":"This content may change without notice, and the final product may be different.","WEA.AppPages.Price.Title":"Price","WEA.AppPages.PrivacyPolicy":"Privacy Policy","WEA.AppPages.RankInGenre":"#@@rank@@ in @@genreName@@","WEA.AppPages.Rating":"Rating","WEA.AppPages.Ratings.Title":"Ratings","WEA.AppPages.RatingsReviews.Title":"Ratings and Reviews","WEA.AppPages.Required":"Required","WEA.AppPages.Screenshots":"Screenshots","WEA.AppPages.Screenshots.appleTV":"Apple TV","WEA.AppPages.Screenshots.appleTVScreenshots":"Apple TV Screenshots","WEA.AppPages.Screenshots.appleWatch":"Apple Watch","WEA.AppPages.Screenshots.appleWatchScreenshots":"Apple Watch Screenshots","WEA.AppPages.Screenshots.ipad":"iPad","WEA.AppPages.Screenshots.ipadScreenshots":"iPad Screenshots","WEA.AppPages.Screenshots.iphone":"iPhone","WEA.AppPages.Screenshots.iphoneScreenshots":"iPhone Screenshots","WEA.AppPages.Screenshots.mac":"Mac","WEA.AppPages.Screenshots.messages":"iMessage","WEA.AppPages.Screenshots.messagesScreenshots":"iMessage Screenshots","WEA.AppPages.Seller":"Seller","WEA.AppPages.Size":"Size","WEA.AppPages.StandAloneForWatch":"Only on Apple Watch","WEA.AppPages.Subscriptions.FreeTrial":"Free Trial","WEA.AppPages.Subscriptions.PayAsYouGo":"@@price@@ Trial","WEA.AppPages.Subscriptions.PayUpFront":"@@price@@ Trial","WEA.AppPages.Subscriptions.Title":"Subscriptions","WEA.AppPages.Supports.FamilySharing.Description":"Up to six family members can use this app with Family Sharing enabled.","WEA.AppPages.Supports.FamilySharing.Description.withIAP":"Some in‑app purchases, including subscriptions, may be shareable with your family group when Family Sharing is enabled.","WEA.AppPages.Supports.FamilySharing.Title":"Family Sharing","WEA.AppPages.Supports.GameCenter.Description":"Challenge friends and check leaderboards and achievements.","WEA.AppPages.Supports.GameCenter.Title":"Game Center","WEA.AppPages.Supports.GameController.Description":"Play this game with your favorite compatible controller.","WEA.AppPages.Supports.GameController.Title":"Game Controllers","WEA.AppPages.Supports.Siri.Description":"Get things done within this app using just your voice.","WEA.AppPages.Supports.Siri.Title":"Siri","WEA.AppPages.Supports.Title":"Supports","WEA.AppPages.Supports.Wallet.Description":"Get all of your passes, tickets, cards, and more in one place.","WEA.AppPages.Supports.Wallet.Title":"Wallet","WEA.AppPages.TopInAppPurchases.Title":"In-App Purchases","WEA.AppPages.TopInCategory.Title":"Top Apps In @@categoryName@@","WEA.AppPages.Twitter.site.desktopApp":"@MacAppStore","WEA.AppPages.Updated":"Updated","WEA.AppPages.Version":"Version","WEA.AppPages.VersionHistory.Title":"Version History","WEA.AppPages.ViewIn":"View On:","WEA.AppPages.WhatsNew.Header":"What’s New","WEA.CarrierPages.UpdateOS.Instructions.MacOS":"For Mac, go to System Preferences \u003e Software Update","WEA.CarrierPages.UpdateOS.Instructions.One":"Once your device is updated, go back and use the link from your carrier to activate this subscription.","WEA.CarrierPages.UpdateOS.Instructions.iOS":"For iPhone and iPad, go to Settings \u003e General \u003e Software Update","WEA.CarrierPages.UpdateOS.Meta.Description":"Update your iPhone, iPad, or Mac to the latest OS to activate the subscription included with your carrier plan.","WEA.CarrierPages.UpdateOS.Meta.Title":"Update device to latest OS to activate subscription","WEA.CarrierPages.UpdateOS.Title":"Update your device to the latest OS to activate this subscription.","WEA.Charts.AppFilter.Button":"App Categories","WEA.Charts.AppFilter.Tab":"Apps","WEA.Charts.Apps.AppType.Apps":"apps","WEA.Charts.Apps.AppType.Games":"games","WEA.Charts.Apps.DeviceType.iPad":"iPad","WEA.Charts.Apps.DeviceType.iPhone":"iPhone","WEA.Charts.Apps.Games.top-free-games":"Top Free Games","WEA.Charts.Apps.Games.top-paid-games":"Top Paid Games","WEA.Charts.Apps.Meta.CategoryChartDescription":"Explore top @@chart@@ @@category@@ @@baseCategory@@ for your @@deviceType@@ on the App Store, like @@entity1@@, @@entity2@@, and more.","WEA.Charts.Apps.Meta.CategoryChartKeywords":"@@chart@@, @@deviceType@@, @@category@@, @@baseCategory@@, app store, top charts, apple","WEA.Charts.Apps.Meta.CategoryChartTitle":"Top @@chart@@ @@deviceType@@ @@category@@ @@baseCategory@@ on the App Store - Apple (@@storefront@@)","WEA.Charts.Apps.Meta.CategoryDescription":"Explore top @@deviceType@@ @@category@@ @@baseCategory@@ on the App Store, like @@entity1@@, @@entity2@@, and more.","WEA.Charts.Apps.Meta.CategoryKeywords":"best @@deviceType@@ @@category@@ @@baseCategory@@, @@deviceType@@, @@category@@, @@baseCategory@@, app store, top charts, apple","WEA.Charts.Apps.Meta.CategoryTitle":"Top @@deviceType@@ @@category@@ @@baseCategory@@ on the App Store - Apple (@@storefront@@)","WEA.Charts.Apps.Meta.Chart.Free":"free","WEA.Charts.Apps.Meta.Chart.Paid":"paid","WEA.Charts.Apps.Meta.ChartDescription":"Explore top @@chart@@ @@deviceType@@ @@baseCategory@@ on the App Store, like @@entity1@@, @@entity2@@, and more.","WEA.Charts.Apps.Meta.ChartKeywords":"best @@chart@@ @@deviceType@@ @@baseCategory@@, @@chart@@, @@deviceType@@, @@baseCategory@@, app store, top charts, apple","WEA.Charts.Apps.Meta.ChartTitle":"Top @@chart@@ @@deviceType@@ @@baseCategory@@ on the App Store - Apple (@@storefront@@)","WEA.Charts.Apps.Meta.Description":"Find and download top apps and games for @@deviceType@@ on the App Store.","WEA.Charts.Apps.Meta.Keywords":"best @@deviceType@@ apps, best @@deviceType@@ games, app store, top charts, apple","WEA.Charts.Apps.Meta.Title":"@@deviceType@@ Top Charts on the App Store - Apple (@@storefront@@)","WEA.Charts.Apps.Title":"Top Charts","WEA.Charts.AudioBooks.Meta.Description":"Browse the list of most popular and best selling audiobooks on Apple Books. Find the top charts for best audiobooks to listen across all genres.","WEA.Charts.AudioBooks.Meta.GenreDescription":"Find the best @@genre@@ audiobooks to listen on Apple Books. View the list of top free audiobooks and the best selling titles including @@entity1@@, @@entity2@@ and more.","WEA.Charts.AudioBooks.Meta.GenreKeywords":"top @@genre@@ audiobooks, top @@genre@@ audiobooks on iphone, ipad, Mac, Apple Books","WEA.Charts.AudioBooks.Meta.GenreTitle":"Top @@genre@@ audiobooks - Apple Books (@@storefront@@)","WEA.Charts.AudioBooks.Meta.Keywords":"top audiobooks, top audiobooks on iphone, ipad, Mac, Apple Books","WEA.Charts.AudioBooks.Meta.Title":"Top audiobooks - Apple Books (@@storefront@@)","WEA.Charts.AudioBooks.Title":"Top Audiobooks","WEA.Charts.Books.Meta.ChartDescription":"Find the best @@genre@@ (@@chart@@) books to read on Apple Books. View the list of top titles including @@entity1@@, @@entity2@@ and more.","WEA.Charts.Books.Meta.ChartKeywords":"top @@chart@@ @@genre@@ books, top @@chart@@ @@genre@@ books on iphone, ipad, Mac, Apple Books","WEA.Charts.Books.Meta.ChartTitle":"Top @@genre@@ books (@@chart@@) - Apple Books (@@storefront@@)","WEA.Charts.Books.Meta.Description":"Browse the list of most popular and best selling books on Apple Books. Find the top charts for best books to read across all genres.","WEA.Charts.Books.Meta.GenreDescription":"Find the best @@genre@@ books to read on Apple Books. View the list of top free books and the best selling titles including @@entity1@@, @@entity2@@ and more.","WEA.Charts.Books.Meta.GenreKeywords":"top @@genre@@ books, top @@genre@@ books on iphone, ipad, Mac, Apple Books","WEA.Charts.Books.Meta.GenreTitle":"Top @@genre@@ books - Apple Books (@@storefront@@)","WEA.Charts.Books.Meta.Keywords":"top books, top books on iphone, ipad, Mac, Apple Books","WEA.Charts.Books.Meta.Title":"Top books - Apple Books (@@storefront@@)","WEA.Charts.Books.Title":"Top Books","WEA.Charts.Categories.Button":"Categories","WEA.Charts.Common.Rank":"Number @@rank@@","WEA.Charts.GameFilter.Button":"Game Categories","WEA.Charts.GameFilter.Tab":"Games","WEA.Charts.GenreFilter.Button":"Genre Charts","WEA.Charts.LocalNav.Links.TopAudiobooks":"Top Audiobooks","WEA.Charts.LocalNav.Links.TopBooks":"Top Books","WEA.Common.Accessibility.LocalNavClose":"Local Nav Close Menu","WEA.Common.Accessibility.LocalNavOpen":"Local Nav Open Menu","WEA.Common.Authentication.Login":"Sign In","WEA.Common.Authentication.Logout":"Sign Out","WEA.Common.AverageRating":"@@rating@@ out of @@ratingTotal@@","WEA.Common.Close":"Close","WEA.Common.Comma":", ","WEA.Common.DotSeparator":"@@string1@@ · @@string2@@","WEA.Common.Duration":"Duration","WEA.Common.Ellipsis.Animated":"\u003cspan\u003e.\u003c/span\u003e\u003cspan\u003e.\u003c/span\u003e\u003cspan\u003e.\u003c/span\u003e","WEA.Common.Errors.404":"The content you’ve requested isn’t currently available.","WEA.Common.Errors.404.Title":"Content Not Available","WEA.Common.FileSize.GB":"@@count@@ GB","WEA.Common.FileSize.GB.AX.one":"1 gigabyte","WEA.Common.FileSize.GB.AX.other":"@@count@@ gigabytes","WEA.Common.FileSize.GB.Unit":"GB","WEA.Common.FileSize.KB":"@@count@@ KB","WEA.Common.FileSize.KB.AX.one":"1 kilobyte","WEA.Common.FileSize.KB.AX.other":"@@count@@ kilobytes","WEA.Common.FileSize.KB.Unit":"KB","WEA.Common.FileSize.MB":"@@count@@ MB","WEA.Common.FileSize.MB.AX.one":"1 megabyte","WEA.Common.FileSize.MB.AX.other":"@@count@@ megabytes","WEA.Common.FileSize.MB.Unit":"MB","WEA.Common.FileSize.byte.Unit":"byte","WEA.Common.FileSize.byte.one":"1 byte","WEA.Common.FileSize.byte.other":"@@count@@ bytes","WEA.Common.Free":"Free","WEA.Common.Get":"GET","WEA.Common.Hours.Unit.Short":"hr","WEA.Common.Hours.abbr.one":"1 hr","WEA.Common.Hours.abbr.other":"@@count@@ hr","WEA.Common.Hours.one":"1 Hour","WEA.Common.Hours.other":"@@count@@ Hours","WEA.Common.Languages.AD":"AD","WEA.Common.Languages.AudioTrack":"AudioTrack","WEA.Common.Languages.CC":"CC","WEA.Common.Languages.Dolby51":"Dolby Digital 5.1","WEA.Common.Languages.Dolby51Plus":"Dolby Digital Plus 5.1","WEA.Common.Languages.Dolby71Plus":"Dolby Digital Plus 7.1","WEA.Common.Languages.DolbyAtmos":"Dolby Atmos","WEA.Common.Languages.SDH":"SDH","WEA.Common.Languages.Subtitled":"Subtitled","WEA.Common.Languages.hasAudioDescription":"AD","WEA.Common.Languages.hasClosedCaptioning":"CC","WEA.Common.Languages.hasDolby":"Dolby 5.1","WEA.Common.Languages.hasDolby71":"Dolby Digital Plus 7.1","WEA.Common.Languages.hasDolbyAtmos":"Dolby Atmos","WEA.Common.Languages.hasSDH":"SDH","WEA.Common.Languages.hasStereo":"Stereo","WEA.Common.Languages.hasSubtitles":"Subtitles","WEA.Common.Languages.languageDescriptor":"@@languageName@@ (@@languageMeta@@)","WEA.Common.LearnMore":"Learn More","WEA.Common.Listen":"Listen","WEA.Common.Loading":"Loading","WEA.Common.Meta.FB.genericDescription.Books":"From mysteries to memoirs, enjoy books and audiobooks on your iPhone, iPad, iPod touch, or Apple Watch. Read free samples of ebooks and listen to free audiobook previews. Get recent bestsellers, all-time favorites, and more on Apple Books—all ready to instantly download.","WEA.Common.Meta.FB.siteName.AM":"Apple Music","WEA.Common.Meta.FB.siteName.AppleTV":"Apple TV","WEA.Common.Meta.FB.siteName.Apps":"App Store","WEA.Common.Meta.FB.siteName.Books":"Apple Books","WEA.Common.Meta.FB.siteName.MacApps":"Mac App Store","WEA.Common.Meta.FB.siteName.Podcasts":"Apple Podcasts","WEA.Common.Meta.FB.siteName.iTunes":"iTunes","WEA.Common.Meta.Twitter.genericDescription.Books":"From mysteries to memoirs, enjoy books and audiobooks on your iPhone, iPad, iPod touch, or Apple Watch. Read free samples of ebooks and listen to free audiobook previews. Get recent bestsellers, all-time favorites, and more on Apple Books—all ready to instantly download.","WEA.Common.Meta.Twitter.site.AM":"@appleMusic","WEA.Common.Meta.Twitter.site.Apps":"@AppStore","WEA.Common.Meta.Twitter.site.Books":"@AppleBooks","WEA.Common.Meta.Twitter.site.iTunes":"@iTunes","WEA.Common.Minutes.Unit.Short":"min","WEA.Common.Minutes.abbr.one":"1 min","WEA.Common.Minutes.abbr.other":"@@count@@ min","WEA.Common.Minutes.one":"1 Minute","WEA.Common.Minutes.other":"@@count@@ Minutes","WEA.Common.More":"more","WEA.Common.NowPlaying":"NOW PLAYING","WEA.Common.Number":"@@count@@","WEA.Common.OG.SiteName.AppleBooks":"Apple Books","WEA.Common.OG.SiteName.TV":"Apple TV","WEA.Common.OG.SiteName.iTunes":"iTunes","WEA.Common.OpensIn.AppleBooks":"Opens In Apple Books","WEA.Common.Paid":"Paid","WEA.Common.Pause":"PAUSE","WEA.Common.Pause.Alternate":"PAUSE","WEA.Common.Percentage":"@@percentage@@%","WEA.Common.Platforms.AppleTv":"Apple TV","WEA.Common.Platforms.Bundles":"Bundles","WEA.Common.Platforms.Mac":"Mac","WEA.Common.Platforms.Watch":"Apple Watch","WEA.Common.Platforms.iMessage":"iMessage","WEA.Common.Platforms.iPad":"iPad","WEA.Common.Platforms.iPadiPhone":"iPad \u0026 iPhone","WEA.Common.Platforms.iPhone":"iPhone","WEA.Common.Play":"Play","WEA.Common.Play.Alternate":"PLAY","WEA.Common.Playback.Progress":"Playback Progress","WEA.Common.Playback.Skip.Ahead":"Skip Ahead","WEA.Common.Playback.Skip.Back":"Skip Back","WEA.Common.Preview":"PREVIEW","WEA.Common.Preview.VideoName":"Preview @@videoName@@","WEA.Common.Ratings.one":"1 Rating","WEA.Common.Ratings.other":"@@count@@ Ratings","WEA.Common.Ratings.zero":"No Ratings","WEA.Common.Related":"Related","WEA.Common.Released":"Released: @@releaseDate@@","WEA.Common.Roles.AsCharacter":"as @@characterName@@","WEA.Common.Roles.Type.Actor":"Actor","WEA.Common.Roles.Type.Advisor":"Advisor","WEA.Common.Roles.Type.Cast":"Cast","WEA.Common.Roles.Type.Creator":"Creator","WEA.Common.Roles.Type.Director":"Director","WEA.Common.Roles.Type.Guest":"Guest","WEA.Common.Roles.Type.GuestStar":"Guest Star","WEA.Common.Roles.Type.Host":"Host","WEA.Common.Roles.Type.Music":"Music","WEA.Common.Roles.Type.Performer":"Performer","WEA.Common.Roles.Type.Producer":"Producer","WEA.Common.Roles.Type.Voice":"Voice","WEA.Common.Roles.Type.Writer":"Writer","WEA.Common.Seconds.abbr.one":"1 sec","WEA.Common.Seconds.abbr.other":"@@count@@ sec","WEA.Common.Seconds.one":"1 Second","WEA.Common.Seconds.other":"@@count@@ Seconds","WEA.Common.SeeAll.Button":"See All","WEA.Common.SeeAll.Title.Generic":"@@parentName@@ - @@sectionTitle@@","WEA.Common.SeeAll.Title.Item":"@@itemName@@ - @@productName@@ - @@sectionTitle@@","WEA.Common.SeeAll.Title.Product":"@@artistName@@ — @@sectionTitle@@","WEA.Common.SeeDetails.Button":"See Details","WEA.Common.SentenceDelimiter":".","WEA.Common.SeparatorDuration":"@@hours@@ @@minutes@@","WEA.Common.SeparatorDuration.Short":"@@string1@@:@@string2@@","WEA.Common.SeparatorGeneric":"@@string1@@, @@string2@@","WEA.Common.Share.CloseMenu.AX":"Close sharing menu","WEA.Common.Share.Embed.AX":"Copy the embed code for the @@contentType@@ @@mediaTitle@@ by @@name@@","WEA.Common.Share.EmbedCopied":"Embed Code Copied","WEA.Common.Share.Link.AX":"Copy a link to the @@contentType@@ @@mediaTitle@@ by @@name@@","WEA.Common.Share.LinkCopied":"Link Copied","WEA.Common.Share.OpenMenu.AX":"Open sharing menu","WEA.Common.Share.Social.AX":"Share the @@contentType@@ @@mediaTitle@@ by @@name@@ on @@network@@","WEA.Common.Shuffle":"Shuffle","WEA.Common.TV.CTA.AM":"Watch on Mac, PC, or Android with Apple Music","WEA.Common.TV.CTA.AX":"Watch on Apple TV","WEA.Common.Time.AvailableIn":"AVAILABLE IN @@minutes@@ MIN","WEA.Common.Time.DayOfTheWeek.Friday":"FRI @@time@@","WEA.Common.Time.DayOfTheWeek.Monday":"MON @@time@@","WEA.Common.Time.DayOfTheWeek.Saturday":"SAT @@time@@","WEA.Common.Time.DayOfTheWeek.Sunday":"SUN @@time@@","WEA.Common.Time.DayOfTheWeek.Thursday":"THU @@time@@","WEA.Common.Time.DayOfTheWeek.Tuesday":"TUE @@time@@","WEA.Common.Time.DayOfTheWeek.Wednesday":"WED @@time@@","WEA.Common.Time.StartsIn":"STARTS IN @@minutes@@ MIN","WEA.Common.Time.Today":"TODAY @@time@@","WEA.Common.Time.Tomorrow":"TOMORROW @@time@@","WEA.Common.Time.Tonight":"TONIGHT @@time@@","WEA.Common.TogglePlay":"Play/Pause","WEA.Common.TrackList.Album":"ALBUM","WEA.Common.TrackList.Artist":"ARTIST","WEA.Common.TrackList.Price":"PRICE","WEA.Common.TrackList.Time":"TIME","WEA.Common.TrackList.TimeRemaining":"Time remaining","WEA.Common.TrackList.Track":"TITLE","WEA.Common.VideoSubType.concert":"CONCERT","WEA.Common.VideoSubType.episode":"EPISODE","WEA.Common.VideoSubType.episodebonus":"EPISODE BONUS","WEA.Common.VideoSubType.feature":"FEATURE","WEA.Common.VideoSubType.seasonbonus":"SEASON BONUS","WEA.Common.VideoSubType.short":"SHORT","WEA.Common.VideoSubType.specialty":"SPECIALTY","WEA.Common.VideoSubType.tvextra":"EXTRA","WEA.Common.VideoSubType.tvinterview":"INTERVIEW","WEA.Common.VideoSubType.tvtrailer":"TRAILER","WEA.Common.View":"VIEW","WEA.Common.Yes":"Yes","WEA.DeepLinkPages.Social.Invite.Description.AM":"Discover music with friends","WEA.DeepLinkPages.Social.Invite.Title.AM":"Start Sharing on Apple Music","WEA.DeepLinkPages.Social.Subscribe.Description.AM":"Play and download all the music you want.","WEA.DeepLinkPages.Social.Subscribe.Title.AM":"Try Apple Music","WEA.DeveloperPages.FB.siteName.developer":"App Store","WEA.DeveloperPages.Messages.NoApps":"There are currently no apps available.","WEA.DeveloperPages.Meta.Description.ManyApps":"Download apps by @@developerName@@, including @@listing1@@, @@listing2@@, @@listing3@@, and many more.","WEA.DeveloperPages.Meta.Description.NoApps":"Download apps by @@developerName@@","WEA.DeveloperPages.Meta.Description.OneApp":"Download apps by @@developerName@@, including @@listing1@@.","WEA.DeveloperPages.Meta.Description.ThreeApps":"Download apps by @@developerName@@, including @@listing1@@, @@listing2@@, and @@listing3@@.","WEA.DeveloperPages.Meta.Description.TwoApps":"Download apps by @@developerName@@, including @@listing1@@ and @@listing2@@.","WEA.DeveloperPages.Meta.PageKeywords":"download, @@developerName@@, apps on iphone, ipad, iMessage, Apple Watch, Mac","WEA.DeveloperPages.Meta.Title":"@@developerName@@ Apps on the App Store","WEA.EditorialItemProductPages.AppOfTheDay":"APP OF THE DAY","WEA.EditorialItemProductPages.Banner.Copy":"This story can only be viewed on the App Store in iOS 11 or later on your iPhone or iPad. @@link@@","WEA.EditorialItemProductPages.Banner.Copy.NewmacOS":"This story can be viewed only in the App Store. @@link@@","WEA.EditorialItemProductPages.Banner.Copy.NonmacOS":"This story can be viewed only in the App Store. @@link@@","WEA.EditorialItemProductPages.Banner.Copy.OldmacOS":"To view this story, @@link@@","WEA.EditorialItemProductPages.Banner.Headline":"Get the Full Experience","WEA.EditorialItemProductPages.Banner.Headline.NewmacOS":"Get the Full Experience","WEA.EditorialItemProductPages.Banner.Headline.NonmacOS":"Get the Full Experience","WEA.EditorialItemProductPages.Banner.Headline.OldmacOS":"Get the Full Experience","WEA.EditorialItemProductPages.Banner.Link.Text":"Learn more.","WEA.EditorialItemProductPages.Banner.Link.Text.NewmacOS":"Learn more.","WEA.EditorialItemProductPages.Banner.Link.Text.NonmacOS":"Learn more.","WEA.EditorialItemProductPages.Banner.Link.Text.OldmacOS":"upgrade to the latest macOS.","WEA.EditorialItemProductPages.Banner.Link.URL":"https://www.apple.com/ios/app-store/","WEA.EditorialItemProductPages.Banner.Link.URL.NewmacOS":"https://www.apple.com/macos/mojave-preview/#mac-app-store","WEA.EditorialItemProductPages.Banner.Link.URL.NonmacOS":"https://www.apple.com/macos/mojave-preview/#mac-app-store","WEA.EditorialItemProductPages.Banner.Link.URL.OldmacOS":"macappstore://itunes.apple.com/WebObjects/MZStore.woa/wa/storeFront","WEA.EditorialItemProductPages.CTA.Headline":"Get the Full Experience","WEA.EditorialItemProductPages.CTA.Link.Url":"https://www.apple.com/ios/app-store/","WEA.EditorialItemProductPages.CTA.Text":"This story can only be viewed on the App Store in iOS 11 or later on your iPhone or iPad.","WEA.EditorialItemProductPages.CTA.Text.AX":"VIEW @@appName@@","WEA.EditorialItemProductPages.FB.siteName.iosSoftware":"App Store","WEA.EditorialItemProductPages.FB.siteName.macOs":"Mac App Store","WEA.EditorialItemProductPages.GameOfTheDay":"GAME OF THE DAY","WEA.EditorialItemProductPages.InAppPurchase":"IN-APP PURCHASE","WEA.EditorialItemProductPages.InAppPurchase.Title":"@@purchaseName@@ for @@appName@@","WEA.EditorialItemProductPages.MacAppStore.MacOS.Meta.PageMetaDescription":"Learn about @@storyTitle@@ on Mac App Store. Download @@featuredAppName@@ and enjoy it on your Mac.","WEA.EditorialItemProductPages.MacAppStore.MacOS.Meta.PageMetaDescription.Collection.ManyMore":"Learn about collection @@storyTitle@@ featuring @@featuredAppName1@@, @@featuredAppName2@@, @@featuredAppName3@@, and many more on Mac App Store. Enjoy these apps on your Mac.","WEA.EditorialItemProductPages.MacAppStore.MacOS.Meta.PageMetaDescription.Collection.One":"Learn about collection @@storyTitle@@ featuring @@featuredAppName1@@ and many more on Mac App Store. Enjoy these apps on your Mac.","WEA.EditorialItemProductPages.MacAppStore.MacOS.Meta.PageMetaDescription.Collection.Three":"Learn about collection @@storyTitle@@ featuring @@featuredAppName1@@, @@featuredAppName2@@, @@featuredAppName3@@, and many more on Mac App Store. Enjoy these apps on your Mac.","WEA.EditorialItemProductPages.MacAppStore.MacOS.Meta.PageMetaDescription.Collection.Two":"Learn about collection @@storyTitle@@ featuring @@featuredAppName1@@, @@featuredAppName2@@, and many more on Mac App Store. Enjoy these apps on your Mac.","WEA.EditorialItemProductPages.MacAppStore.MacOS.Meta.PageMetaKeywords":"@@storyTitle@@, @@featuredAppName@@, @@applicationCategory@@, app, appstore, app store, Mac","WEA.EditorialItemProductPages.MacAppStore.MacOS.Meta.PageMetaKeywords.Collection.One":"@@storyTitle@@, @@featuredAppName1@@, @@applicationCategory@@, app, appstore, app store, Mac","WEA.EditorialItemProductPages.MacAppStore.MacOS.Meta.PageMetaKeywords.Collection.Three":"@@storyTitle@@, @@featuredAppName1@@, @@featuredAppName2@@, @@featuredAppName3@@, @@applicationCategory@@, app, appstore, app store, Mac","WEA.EditorialItemProductPages.MacAppStore.MacOS.Meta.PageMetaKeywords.Collection.Two":"@@storyTitle@@, @@featuredAppName1@@, @@featuredAppName2@@, @@applicationCategory@@, app, appstore, app store, Mac","WEA.EditorialItemProductPages.MacAppStore.Meta.PageMetaDescription":"Learn about @@storyTitle@@ on Mac App Store. Download @@featuredAppName@@ and enjoy it on your iPhone, iPad, and Mac.","WEA.EditorialItemProductPages.MacAppStore.Meta.PageMetaDescription.Collection.ManyMore":"Learn about collection @@storyTitle@@ featuring @@featuredAppName1@@, @@featuredAppName2@@, @@featuredAppName3@@, and many more on Mac App Store. Enjoy these apps on your iPhone, iPad, and Mac.","WEA.EditorialItemProductPages.MacAppStore.Meta.PageMetaDescription.Collection.One":"Learn about collection @@storyTitle@@ featuring @@featuredAppName1@@ and many more on Mac App Store. Enjoy these apps on your iPhone, iPad, and Mac.","WEA.EditorialItemProductPages.MacAppStore.Meta.PageMetaDescription.Collection.Three":"Learn about collection @@storyTitle@@ featuring @@featuredAppName1@@, @@featuredAppName2@@, @@featuredAppName3@@, and many more on Mac App Store. Enjoy these apps on your iPhone, iPad, and Mac.","WEA.EditorialItemProductPages.MacAppStore.Meta.PageMetaDescription.Collection.Two":"Learn about collection @@storyTitle@@ featuring @@featuredAppName1@@, @@featuredAppName2@@, and many more on Mac App Store. Enjoy these apps on your iPhone, iPad, and Mac.","WEA.EditorialItemProductPages.MacAppStore.Meta.PageMetaKeywords":"@@storyTitle@@, @@featuredAppName@@, @@applicationCategory@@, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes, Mac","WEA.EditorialItemProductPages.MacAppStore.Meta.PageMetaKeywords.Collection.One":"@@storyTitle@@, @@featuredAppName1@@, @@applicationCategory@@, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes, Mac","WEA.EditorialItemProductPages.MacAppStore.Meta.PageMetaKeywords.Collection.Three":"@@storyTitle@@, @@featuredAppName1@@, @@featuredAppName2@@, @@featuredAppName3@@, @@applicationCategory@@, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes, Mac","WEA.EditorialItemProductPages.MacAppStore.Meta.PageMetaKeywords.Collection.Two":"@@storyTitle@@, @@featuredAppName1@@, @@featuredAppName2@@, @@applicationCategory@@, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes, Mac","WEA.EditorialItemProductPages.Meta.PageMetaDescription":"Learn about @@storyTitle@@ on App Store. ","WEA.EditorialItemProductPages.Meta.PageMetaDescription.Collection.ManyMore":"Learn about collection @@storyTitle@@ featuring @@featuredAppName1@@, @@featuredAppName2@@, @@featuredAppName3@@, and many more on App Store. Enjoy these apps on your iPhone, iPad, and iPod touch.","WEA.EditorialItemProductPages.Meta.PageMetaDescription.Collection.One":"Learn about collection @@storyTitle@@ featuring @@featuredAppName1@@ and many more on App Store. Enjoy these apps on your iPhone, iPad, and iPod touch.","WEA.EditorialItemProductPages.Meta.PageMetaDescription.Collection.Three":"Learn about collection @@storyTitle@@ featuring @@featuredAppName1@@, @@featuredAppName2@@, and @@featuredAppName3@@ on App Store. Enjoy these apps on your iPhone, iPad, and iPod touch.","WEA.EditorialItemProductPages.Meta.PageMetaDescription.Collection.Two":"Learn about collection @@storyTitle@@ featuring @@featuredAppName1@@, @@featuredAppName2@@, and many more on App Store. Enjoy these apps on your iPhone, iPad, and iPod touch.","WEA.EditorialItemProductPages.Meta.PageMetaKeywords":"@@storyTitle@@, @@applicationCategory@@, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes","WEA.EditorialItemProductPages.Meta.PageMetaKeywords.Collection.One":"@@storyTitle@@, @@featuredAppName1@@, @@applicationCategory@@, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes","WEA.EditorialItemProductPages.Meta.PageMetaKeywords.Collection.Three":"@@storyTitle@@, @@featuredAppName1@@, @@featuredAppName2@@, @@featuredAppName3@@, @@applicationCategory@@, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes","WEA.EditorialItemProductPages.Meta.PageMetaKeywords.Collection.Two":"@@storyTitle@@, @@featuredAppName1@@, @@featuredAppName2@@, @@applicationCategory@@, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes","WEA.EditorialItemProductPages.Meta.title":"@@storyTitle@@ : App Store Story","WEA.EditorialItemProductPages.Social.title.AOTD":"App of the Day: @@appName@@","WEA.EditorialItemProductPages.Social.title.ASA":"@@storyTitle@@: @@appName@@","WEA.EditorialItemProductPages.Social.title.GOTD":"Game of the Day: @@appName@@","WEA.EditorialItemProductPages.Social.title.IAP":"In-App Purchase: @@appName@@","WEA.Error.Carrier.Install.AM":"To Start listening, install Apple Music on your device","WEA.Error.Carrier.Installed":"Already have the app?","WEA.Error.Carrier.Open.Action":"Get it on @@appname@@","WEA.Error.Generic.AppleMusicLogo.Text":"Apple Music","WEA.Error.Generic.GooglePlay":"Google Play","WEA.Error.Generic.Install.AM":"If this link does not work, you might need to @@installLink@@.","WEA.Error.Generic.Install.AM.Link.Text":"install Apple Music","WEA.Error.Generic.Meta.PageKeywords":"Apple Music","WEA.Error.Generic.Meta.PageKeywords.AppleBooks":"Apple Books","WEA.Error.Generic.Meta.PageKeywords.iTunes":"iTunes Store","WEA.Error.Generic.Meta.PageTitle":"Connecting to Apple Music.","WEA.Error.Generic.Open.AM":"Open in Apple Music","WEA.Error.Generic.Open.Action.AM":"Open in","WEA.Error.Generic.Subtitle":"If you don’t have iTunes, @@downloadLink@@. If you have iTunes and it doesn’t open automatically, try opening it from your dock or Windows task bar.","WEA.Error.Generic.Subtitle.DownloadLink.Text":"download it for free","WEA.Error.Generic.Subtitle.DownloadLink.URL":"http://www.apple.com/itunes/download/","WEA.Error.Generic.Title":"Connecting to Apple Music","WEA.Error.Generic.Title.AppleBooks":"Connecting to Apple Books","WEA.Error.Generic.Title.Apps":"Connecting to App Store","WEA.Error.Generic.Title.Connecting":"Connecting","WEA.Error.Generic.Title.Podcasts":"Connecting to Apple Podcasts","WEA.Error.Generic.Title.iTunes":"Connecting to the iTunes Store.","WEA.Error.NativeMissing.AM.Subtitle":"You need iTunes to use Apple Music","WEA.Error.NativeMissing.Other.AM":"Get Apple Music on iOS, Android, Mac, and Windows","WEA.Error.NativeMissing.Other.LearnMore.link":"https://www.apple.com/itunes/download/","WEA.Error.NativeMissing.Other.iTunes":"Get iTunes on iOS, Android, Mac, and Windows","WEA.Error.NativeMissing.iTunes.Download.link":"https://www.apple.com/itunes/download/","WEA.Error.NativeMissing.iTunes.Download.text":"Download iTunes","WEA.Error.NativeMissing.iTunes.TV.Subtitle":"Download iTunes below to start watching.","WEA.Error.NativeMissing.iTunes.Title":"We could not find iTunes on your computer.","WEA.Error.NotFound.Meta.Title":"This content can’t be found.","WEA.Error.NotFound.general":"The page you're looking for cannot be found.","WEA.GroupingPages.CTA.GoToWebsite":"Go To","WEA.InvoicePages.Receipts.Instructions":"Try again on an iPhone, iPad, or Mac, or use iTunes on a PC","WEA.InvoicePages.Receipts.Meta.Description":"You can't turn off receipts on this device.","WEA.InvoicePages.Receipts.Meta.Title":"Receipts","WEA.InvoicePages.Receipts.Title":"You can't turn off receipts on this device.","WEA.LocalNav.CTA.AppName.TV":"Apple TV app","WEA.LocalNav.CTA.DownloadiTunes":"Download iTunes","WEA.LocalNav.CTA.DownloadiTunes.url":"https://www.apple.com/itunes/download/","WEA.LocalNav.CTA.FreeTrial":"Try It Now","WEA.LocalNav.CTA.FreeTrial.url":"https://itunes.apple.com/subscribe?app=music","WEA.LocalNav.CTA.iTunesStore.TV":"Learn More","WEA.LocalNav.Preview.AM":"Preview","WEA.LocalNav.Preview.AppStore":"Preview","WEA.LocalNav.Preview.Books":"Preview","WEA.LocalNav.Preview.MAS":"Preview","WEA.LocalNav.Preview.Podcasts":"Preview","WEA.LocalNav.Preview.TV":"Preview","WEA.LocalNav.Preview.iBooks":"Preview","WEA.LocalNav.Preview.iTunes":"Preview","WEA.LocalNav.Store.AM":"Apple Music","WEA.LocalNav.Store.AppStore":"App Store","WEA.LocalNav.Store.Books":"Apple Books","WEA.LocalNav.Store.MAS":"Mac App Store","WEA.LocalNav.Store.Podcasts":"Apple Podcasts","WEA.LocalNav.Store.TV":"Apple TV","WEA.LocalNav.Store.iBooks":"Apple Books","WEA.LocalNav.Store.iTunes":"iTunes","WEA.LocalNav.Title.Preview.AM":"@@product@@ @@qualifier@@","WEA.LocalNav.Title.Preview.AppStore":"@@product@@ @@qualifier@@","WEA.LocalNav.Title.Preview.Books":"@@product@@ @@qualifier@@","WEA.LocalNav.Title.Preview.MAS":"@@product@@ @@qualifier@@","WEA.LocalNav.Title.Preview.Podcasts":"@@product@@ @@qualifier@@","WEA.LocalNav.Title.Preview.TV":"@@product@@ @@qualifier@@","WEA.LocalNav.Title.Preview.iBooks":"@@product@@ @@qualifier@@","WEA.LocalNav.Title.Preview.iTunes":"@@product@@ @@qualifier@@","WEA.MusicPages.Riaa.Explicit.AX":"Parental Advisory: Explicit Lyrics.","WEA.PaddleNav.Next.AX":"Next","WEA.PaddleNav.Previous.AX":"Previous","WEA.StarRating.Separator":" • ","WFA.Common.Meta.Twitter.site":"@Apple"}}</script>
@@ -1911,6 +1384,7 @@ What kind of person are you and your lover? Every human has unique characteristi
   <script integrity src="js/OixyX4Gle7MU.js"></script>
   <script src="js/GzOnV8KXFkq0.js"></script>
   <script src="js/Dkwrs0JjL52d.js"></script>
+  <script src="js/scroll.js"></script>
   <script integrity src="js/DRyWYZiv5AVi.js" data-app-legacy-src nomodule></script>
 
 
