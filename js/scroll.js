@@ -7,11 +7,17 @@ window.onscroll = function (event) {
         isScrolled = true
         elements.forEach(element => {
             const elem = document.querySelector(element)
-            elem.style.opacity = 1;
+            elem.classList.remove('opacity-0')
             elem.classList.add('fadeIn')
-
         })
 
+    }else if(window.scrollY < scrolledElement.height && isScrolled){
+        isScrolled = false
+        elements.forEach(element => {
+            const elem = document.querySelector(element)
+            elem.classList.remove('fadeIn')
+            elem.classList.add('opacity-0')
+        })
     }
 
 }

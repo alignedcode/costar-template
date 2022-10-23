@@ -24,6 +24,15 @@
     height: 23px
 }
 
+.search-button{
+    align-items: center;
+
+}
+
+.search-button a {
+    margin-left: 8px;
+}
+
 .header-background {
     background: #F2F2F7;
     box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.25);
@@ -101,13 +110,7 @@
 }
 
 
-.information-list--app,
-.information-list__item {
-    padding: 8px 0 !important;
-    display: flex !important;
-    justify-content: space-between;
 
-}
 
 
 
@@ -167,12 +170,35 @@
     color: #000000;
 }
 
-@media screen and (max-width: 1000px) {
+
+@media  (min-width: 768px){
+    .desctop-hidden{
+       display: none !important; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .information-list--app,
+    .information-list__item {
+        padding: 8px 0 !important;
+        display: flex !important;
+        justify-content: space-between;
+    
+    }
 
     .localnav-background {
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-hidden{
+        display: none  !important;
     }
 
 
@@ -238,7 +264,7 @@
 
     @keyframes fadeIn {
         0% {
-            transform: translateY(50px);
+            transform: translateY(10px);
             opacity: 0;
         }
 
@@ -251,6 +277,10 @@
 
 
     .fadeIn {
-        animation: fadeIn 1.7s;
+        animation: fadeIn  0.5s linear forwards;
+    }
+
+    .opacity-0{
+        opacity: 0 !important;
     }
 }
