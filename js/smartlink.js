@@ -24,6 +24,8 @@ var result = window.AF_SMART_SCRIPT.generateOneLinkURL({
 });
 
 
+var anchors = document.getElementsByTagName("a");
+
 window.onload = function() {
     for (var i = 0; i < anchors.length; i++) {
         anchors[i].href = result.clickURL
