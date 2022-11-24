@@ -6,7 +6,7 @@ var AF_URL_SCHEME="(https:\\/\\/)(([^\\.][^\\.]+).)(.*\\/)(.*)",VALID_AF_URL_PAR
 
 //Initializing Smart Script arguments
 var oneLinkURL = "https://costar.onelink.me/rMXw/nwyzm0tl";
-var mediaSource = {keys:["utm_source"],defaultValue:"w2a"};
+  var mediaSource = {keys: ["inmedia", "utm_source"], defaultValue: "w2a"};
 var campaign = {keys:["utm_campaign"]};
 var custom_ss_ui = {paramKey:"af_ss_ui",defaultValue:"true"};
 
@@ -28,6 +28,7 @@ var anchors = document.getElementsByTagName("a");
 
 window.onload = function() {
     for (var i = 0; i < anchors.length; i++) {
+        console.log(result.clickURL)
         anchors[i].href = result.clickURL
     }
     
