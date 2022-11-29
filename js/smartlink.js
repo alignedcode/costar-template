@@ -4,7 +4,7 @@ var AF_URL_SCHEME="(https:\\/\\/)(([^\\.][^\\.]+).)(.*\\/)(.*)",VALID_AF_URL_PAR
 
 
 //Initializing Smart Script arguments
-var oneLinkURL = "https://costar.onelink.me/rMXw/xgs93hi9";
+var oneLinkURL = "https://app.appsflyer.com/id1464015994";
 var mediaSource = {keys:["utm_source"],overrideValues:{"utm_source":"social_facebook"},defaultValue:"w2a"};
 var campaign = {keys:["nazvanie_rk"]};
 var adSet = {keys:["adset_name"]};
